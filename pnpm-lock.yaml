@@ -5,9 +5,15 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  medium-zoom:
+    specifier: ^1.1.0
+    version: 1.1.0
   vitepress:
     specifier: ^1.5.0
     version: 1.5.0(@algolia/client-search@5.18.0)(search-insights@2.17.3)
+  vue:
+    specifier: ^3.5.13
+    version: 3.5.13
 
 packages:
 
@@ -1059,6 +1065,10 @@ packages:
       unist-util-position: 5.0.0
       unist-util-visit: 5.0.0
       vfile: 6.0.3
+    dev: true
+
+  /medium-zoom@1.1.0:
+    resolution: {integrity: sha512-ewyDsp7k4InCUp3jRmwHBRFGyjBimKps/AJLjRSox+2q/2H4p/PNpQf+pwONWlJiOudkBXtbdmVbFjqyybfTmQ==}
     dev: true
 
   /micromark-util-character@2.1.1:

@@ -31,27 +31,27 @@ export default defineConfig({
       {
         text: '基本功能',
         items: [
-          { text: '推文发送', link: '/markdown-examples' },
-          { text: '系统设置', link: '/markdown-examples' },
-          { text: '个人信息', link: '/markdown-examples' },
-          { text: '推文导入', link: '/markdown-examples' },
-          { text: '推文转发', link: '/markdown-examples' },
+          { text: '推文发送', link: '/guide/feature/tweet-post' },
+          { text: '系统设置', link: '/guide/feature/system-config' },
+          { text: '个人信息', link: '/guide/feature/profile-config' },
+          { text: '推文导入', link: '/guide/feature/tweet-import' },
+          { text: '推文转发', link: '/guide/feature/tweet-forward' },
         ]
       },
       {
         text: '导入说明',
         items: [
-          { text: 'X / Twitter', link: '/markdown-examples' }
+          { text: 'X / Twitter', link: '/guide/feature/import/x-twitter' }
         ]
       },
       {
-        text: '转发说明',
+        text: '转发配置',
         items: [
-          { text: 'X / Twitter', link: '/markdown-examples' }
+          { text: 'X / Twitter', link: '/guide/feature/forward/x-twitter' }
         ]
       },
       {
-        text: '扩展说明',
+        text: '扩展指南',
         items: [
           { text: '扩展导入功能', link: '/markdown-examples' },
           { text: '扩展转发功能', link: '/api-examples' }
@@ -71,5 +71,11 @@ export default defineConfig({
     //   copyright:
     //     'Copyright © 2024-present <a target="_blank" href="https://x.com/harukiO_0">@harukiO_0</a>'
     // }
+  },
+  markdown: {
+    image: {
+      // 默认禁用；设置为 true 可为所有图片启用懒加载。
+      lazyLoading: true
+    }
   }
 })
