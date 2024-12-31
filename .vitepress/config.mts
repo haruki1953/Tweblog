@@ -53,8 +53,9 @@ export default defineConfig({
       {
         text: '扩展指南',
         items: [
-          { text: '扩展导入功能', link: '/markdown-examples' },
-          { text: '扩展转发功能', link: '/api-examples' }
+          { text: '概览', link: '/guide/extension/overview' },
+          { text: '扩展导入', link: '/guide/extension/import' },
+          { text: '扩展转发', link: '/guide/extension/forward' }
         ]
       },
     ],
