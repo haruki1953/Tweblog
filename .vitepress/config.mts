@@ -53,9 +53,9 @@ export default defineConfig({
       {
         text: '扩展指南',
         items: [
-          { text: '概览', link: '/guide/extension/overview' },
-          { text: '扩展导入', link: '/guide/extension/import' },
-          { text: '扩展转发', link: '/guide/extension/forward' }
+          { text: '项目说明', link: '/guide/extension/project' },
+          { text: '导入功能', link: '/guide/extension/import' },
+          { text: '转发功能', link: '/guide/extension/forward' }
         ]
       },
     ],
