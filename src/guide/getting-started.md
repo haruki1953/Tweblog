@@ -10,8 +10,8 @@ cd ${HOME}/Tweblog
 ```
 
 ## 使用 docker 部署 Tweblog
-复制以下命令运行即可。
-```
+运行以下命令
+```sh
 docker run -d \
 	--name Tweblog \
 	-v ${HOME}/Tweblog/data:/app/data \
@@ -52,6 +52,8 @@ docker logs Tweblog
 
 ::: warning 项目部署后，第一要务是修改用户名与密码
 在管理页面中，点击屏幕下方控制条中的设置按钮，进入系统设置页面修改用户名与密码
+
+常见问题：[忘记密码](faq.md#忘记密码)
 :::
 
 关于 `/` 根路径的公开页面，任何访问的用户都能通过这个页面浏览推文

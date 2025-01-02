@@ -25,7 +25,8 @@ export default defineConfig({
         items: [
           { text: '什么是 Tweblog', link: '/guide/what-is-tweblog' },
           { text: '快速开始', link: '/guide/getting-started' },
-          { text: '部署', link: '/guide/deploy' }
+          { text: '部署', link: '/guide/deploy' },
+          { text: '常见问题', link: '/guide/faq' }
         ]
       },
       {
@@ -62,7 +63,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/haruki1953/Tweblog' },
-      { icon: 'discord', link: 'https://discord.gg/nZWpvz2WNW' },
+      { icon: 'discord', link: 'https://discord.gg/tYXj9ShnVr' },
       { icon: 'x', link: 'https://x.com/harukiO_0' },
     ],
 

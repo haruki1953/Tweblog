@@ -1,9 +1,9 @@
 # 扩展导入功能
 
 ## 导入功能原理
-推文导入的原理是前端对 JSON 数据进行解析，将整理后的数据发送至后端，后端保存文字内容，并请求获取图片，以此完成导入。
+主要的业务逻辑是在前端，前端对 JSON 数据进行解析，将整理后的数据发送至后端。不管从哪个平台导入，后端接收的数据结构是一样的。
 
-主要的业务逻辑是在前端，不管从哪个平台导入，后端接收的数据结构是一样的
+后端将请求获取数据中的图片，处理后与数据中的其他内容一同保存在数据库。
 
 ## 导入的数据结构
 前端对 JSON 数据进行解析，解析为这个结构
@@ -40,7 +40,7 @@ export type ImportPostItem = {
 export type ImportPostList = ImportPostItem[]
 ```
 
-## 关键代码位置
+## 关键代码
 ```
 tweet-blog-vue3\src\views\control\views\tweet-import
 |   TweetImport.vue
@@ -61,8 +61,6 @@ tweet-blog-vue3\src\views\control\views\tweet-import
                 types.d.ts
                 utils.ts
 ```
-
-## 代码讲解
 
 `components/ImportProcess.vue` 中存在一个文本域，其会调用 `services/process.ts` 导出的 `processJsonToImportPostsByPlatform` 函数来解析 json 数据
 
@@ -93,7 +91,7 @@ export const processJsonToImportPostsByPlatform = (data: {
 如果要扩展的话，比如添加从 Telegram 解析数据，可以创建 `data-process/telegram` 目录来编写对应的函数，并在 `services/process.ts` 调用
 
 
-## 扩展导入
+## 导入功能扩展流程
 
 现在以扩展从 Telegram 导入推文为例，来梳理扩展流程
 
@@ -167,7 +165,7 @@ export const platformKeyEnum = [
 
 ### 编写解析函数
 ```
-tweet-blog-vue3\src\views\control\views\tweet-import
+tweet-blog-vue3: src\views\control\views\tweet-import
 |   TweetImport.vue
 +---components
 |       ……
