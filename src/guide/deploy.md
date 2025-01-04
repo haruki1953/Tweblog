@@ -8,10 +8,20 @@ cd ${HOME}/Tweblog
 ```
 
 ## 方法 1: 从 Docker Hub 拉取部署 
-如果有代理软件的话，可以尝试先设置代理
+代理配置 [Daemon proxy configuration](https://docs.docker.com/engine/daemon/proxy/)
 ```sh
-export http_proxy=http://127.0.0.1:10809/
-export https_proxy=http://127.0.0.1:10809/
+vim /etc/docker/daemon.json
+```
+```json
+{
+  "proxies": {
+    "http-proxy": "http://127.0.0.1:10809/",
+    "https-proxy": "http://127.0.0.1:10809/"
+  }
+}
+```
+```sh
+systemctl restart docker
 ```
 
 从 Docker Hub 拉取部署 
@@ -21,7 +31,7 @@ docker run -d \
 	-v ${HOME}/Tweblog/data:/app/data \
 	-p 51125:51125 \
 	--restart unless-stopped \
-	tweblog:0.0.0
+	harukiowo/tweblog:0.0.1
 ```
 
 查看日志
@@ -33,22 +43,21 @@ docker logs Tweblog
 ## 方法 2: 手动请求并加载镜像
 ```sh
 # 将文件下载到当前目录
-curl -L -O https://sakiko.top/d/onedrive/Sakiko/Project/Tweblog/20241228/tweblog-build-241228-132538.tar
+curl -L -O https://sakiko.top/d/onedrive/Sakiko/Project/Tweblog/0_0_1/tweblog-0_0_1.tar
 
 # 加载镜像
-docker load -i tweblog-build-241228-132538.tar
+docker load -i tweblog-0_0_1.tar
 
 # 启动容器
 docker run -d \
-	--name tweblog-run-241228-132538 \
-	-v /root/tweblog-run-241228-132538/data:/app/data \
+	--name Tweblog \
+	-v ${HOME}/Tweblog/data:/app/data \
 	-p 51125:51125 \
 	--restart unless-stopped \
-	tweblog-build-241228-132538:0.0.0
+	harukiowo/tweblog:0.0.1
 
 # 查看日志
-docker logs tweblog-run-241228-132538
-
+docker logs Tweblog
 ```
 
 

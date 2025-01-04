@@ -17,7 +17,7 @@ docker run -d \
 	-v ${HOME}/Tweblog/data:/app/data \
 	-p 51125:51125 \
 	--restart unless-stopped \
-	tweblog:0.0.0
+	harukiowo/tweblog:0.0.1
 ```
 
 ::: tip 更多部署说明
@@ -34,13 +34,16 @@ docker logs Tweblog
   ========================================
               Tweblog 已启动
   ========================================
-
+  
   公开访问: http://127.0.0.1:51125/
-
+  
   管理访问: http://127.0.0.1:51125/admin/
   默认用户名: admin
   默认密码: adminadmin
 
+  https://tweblog.com/
+  https://github.com/haruki1953/Tweblog
+  
   ========================================
 ```
 ::: info 注意
