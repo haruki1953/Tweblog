@@ -48,24 +48,30 @@ export type ImportPostList = ImportPostItem[]
 
 ## 关键代码
 ```
-tweet-blog-vue3\src\views\control\views\tweet-import
+tweet-blog-vue3: src\views\control\views\tweet-import
 |   TweetImport.vue
-+---components
-|       dependencies.ts
-|       ImportProcess.vue
-|       ImportSubmit.vue
-|       ……
-\---services
-    |   index.ts
-    |   process.ts
-    \---data-process
-        |   index.ts
-        \---x-twitter
-                index.ts
-                schemas.ts
-                services.ts
-                types.d.ts
-                utils.ts
++---services
+|   |   index.ts
+|   |   process.ts
+|   \---data-process
+|       |   index.ts
+|       \---x-twitter
+|               index.ts
+|               schemas.ts
+|               services.ts
+|               types.d.ts
+|               utils.ts
+\---views
+    |   dependencies.ts
+    +---import
+    |   |   dependencies.ts
+    |   |   ImportPage.vue
+    |   \---components
+    |           dependencies.ts
+    |           ImportProcess.vue
+    |           ImportSubmit.vue
+    |           ...
+    ...
 ```
 
 `components/ImportProcess.vue` 中存在一个文本域，其会调用 `services/process.ts` 导出的 `processJsonToImportPostsByPlatform` 函数来解析 json 数据
@@ -173,23 +179,23 @@ export const platformKeyEnum = [
 ```
 tweet-blog-vue3: src\views\control\views\tweet-import
 |   TweetImport.vue
-+---components
-|       ……
-\---services
-    |   index.ts
-    |   process.ts
-    \---data-process
-        |   index.ts
-        +---telegram
-        |       services.ts
-        |       index.ts
-        \---x-twitter
-                index.ts
-                schemas.ts
-                services.ts
-                types.d.ts
-                utils.ts
++---services
+|   |   index.ts
+|   |   process.ts
+|   \---data-process
+|       |   index.ts
+|       +---telegram
+|       |       services.ts
+|       |       index.ts
+|       \---x-twitter
+|               index.ts
+|               schemas.ts
+|               services.ts
+|               types.d.ts
+|               utils.ts
+...
 ```
+
 
 创建 `data-process/telegram` 目录，在其中创建 `services.ts` `index.ts`、
 
