@@ -25,7 +25,7 @@ type ForwardSettingItem = {
 }
 ```
 
-这个数据结构会根据 [platform.ts](./project.md#platform-ts-说明) 自动生成
+这个数据结构会根据 [platform.ts](./platform-ts.md) 自动生成
 
 ```ts
 // tweet-blog-hono: src\schemas\types\forward.ts
@@ -276,7 +276,7 @@ export const platformKeyEnum = [
 ```
 
 ::: info 关于 platform.ts
-详细的说明请看 [platform.ts 说明](./project.md#platform-ts-说明)
+详细的说明请看 [platform.ts 说明](./platform-ts.md)
 :::
 
 

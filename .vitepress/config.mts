@@ -26,7 +26,8 @@ export default defineConfig({
           { text: '什么是 Tweblog', link: '/guide/what-is-tweblog' },
           { text: '快速开始', link: '/guide/getting-started' },
           { text: '部署', link: '/guide/deploy' },
-          { text: '常见问题', link: '/guide/faq' }
+          { text: '常见问题', link: '/guide/faq' },
+          { text: '更新日志', link: '/guide/changelog' }
         ]
       },
       {
@@ -55,6 +56,7 @@ export default defineConfig({
         text: '扩展指南',
         items: [
           { text: '项目说明', link: '/guide/extension/project' },
+          { text: '关键配置 platform.ts', link: '/guide/extension/platform-ts' },
           { text: '导入功能', link: '/guide/extension/import' },
           { text: '转发功能', link: '/guide/extension/forward' }
         ]

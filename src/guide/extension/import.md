@@ -40,6 +40,12 @@ export type ImportPostItem = {
 export type ImportPostList = ImportPostItem[]
 ```
 
+::: info 或许需要留意的一点
+解析后的导入数据数组中，要保持父帖在子帖之前
+
+不过自己在处理 X 的数据时，并没有针对这一点进行处理，因为一般的顺序就是正确的，别的平台可能也是这样的吧
+:::
+
 ## 关键代码
 ```
 tweet-blog-vue3\src\views\control\views\tweet-import
@@ -160,7 +166,7 @@ export const platformKeyEnum = [
 ```
 
 ::: info 关于 platform.ts
-详细的说明请看 [platform.ts 说明](./project.md#platform-ts-说明)
+详细的说明请看 [platform.ts 说明](./platform-ts.md)
 :::
 
 ### 编写解析函数

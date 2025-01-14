@@ -17,7 +17,7 @@ docker run -d \
 	-v ${HOME}/Tweblog/data:/app/data \
 	-p 51125:51125 \
 	--restart unless-stopped \
-	harukiowo/tweblog:0.0.1
+	harukiowo/tweblog:0.0.2
 ```
 
 ::: tip 更多部署说明
