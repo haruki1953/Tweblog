@@ -7,8 +7,8 @@
 - [批量导入](./feature/tweet-import.md#批量导入)
 - [高级功能](./feature/tweet-import.md#高级功能)：在导入的同时关联至转发记录
 - 导入、转发任务，可以进行 [任务中止](./feature/tweet-import.md#任务中止)
-- 自动转发
-- 转发记录设置
+- [自动转发](./feature/tweet-forward.md#自动转发)
+- [转发记录设置](./feature/tweet-forward.md#转发记录设置)
 
 改进
 - 解决图片预览的白边问题，优化动画

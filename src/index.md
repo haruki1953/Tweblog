@@ -16,6 +16,9 @@ hero:
     - theme: alt
       text: 指南
       link: /guide/what-is-tweblog
+    - theme: alt
+      text: 预览
+      link: https://haruki.sakiko.top/
 
 features:
   - icon: 👀
