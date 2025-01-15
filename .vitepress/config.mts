@@ -13,7 +13,7 @@ export default defineConfig({
     ['meta', { property: 'og:url', content: 'https://tweblog.com/' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: 'Tweblog' }],
-    ['meta', { name: 'twitter:card', content: 'summary' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: 'Tweblog' }],
     ['meta', { name: 'twitter:description', content: '一个自己的微博客' }],
     ['meta', { name: 'twitter:image', content: 'https://tweblog.com/favicon.svg' }],

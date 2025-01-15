@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://tweblog.com/favicon.svg" alt="cover" width="30%">
+  <img src="https://tweblog.com/favicon.svg" alt="cover" style="width: 20%; min-width: 100px;">
 </p>
 
 <p align="center">
@@ -67,22 +67,12 @@
 
 ![alt text](./src/guide/assets/image.jpg)
 
----
-
 ![alt text](./src/guide/assets/image-1.jpg)
-
----
 
 ![alt text](./src/guide/assets/image-2.jpg)
 
----
-
 ![alt text](./src/guide/assets/image-3.jpg)
 
----
-
 ![alt text](./src/guide/assets/image-5.jpg)
-
----
 
 ![alt text](./src/guide/assets/image-6.jpg)
