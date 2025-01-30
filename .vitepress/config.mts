@@ -4,25 +4,25 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   srcDir: './src',
   title: "Tweblog",
-  description: "一个自己的微博客",
+  description: "一个社交媒体博客化工具",
   head: [
-    ['link', { rel: 'icon', href: '/favicon.svg' }],
+    ['link', { rel: 'icon', href: '/favicon256.png' }],
     ['meta', { property: 'og:title', content: 'Tweblog' }],
-    ['meta', { property: 'og:description', content: '一个自己的微博客' }],
-    ['meta', { property: 'og:image', content: 'https://tweblog.com/favicon.svg' }],
+    ['meta', { property: 'og:description', content: '一个社交媒体博客化工具' }],
+    ['meta', { property: 'og:image', content: '/social.jpg' }],
     ['meta', { property: 'og:url', content: 'https://tweblog.com/' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: 'Tweblog' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: 'Tweblog' }],
-    ['meta', { name: 'twitter:description', content: '一个自己的微博客' }],
-    ['meta', { name: 'twitter:image', content: 'https://tweblog.com/favicon.svg' }],
+    ['meta', { name: 'twitter:description', content: '一个社交媒体博客化工具' }],
+    ['meta', { name: 'twitter:image', content: '/social.jpg' }],
     ['meta', { name: 'twitter:site', content: '@harukiO_0' }]
   ],
   cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/favicon.svg',
+    logo: '/favicon256.png',
     search: {
       provider: 'local'
     },

@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "Tweblog"
-  text: "一个自己的微博客"
-  tagline: 从推特导入推文，配置后可转发到其他平台
+  text: "社交媒体博客化工具"
+  tagline: 针对推特等平台的内容进行导入与转发
   image:
     src: /favicon.svg
     alt: Tweblog
@@ -18,7 +18,7 @@ hero:
       link: /guide/what-is-tweblog
     - theme: alt
       text: 预览
-      link: https://haruki.sakiko.top/
+      link: https://haruki.tweblog.com/
 
 features:
   - icon: 👀
@@ -34,9 +34,9 @@ features:
     title: 良好的扩展性
     details: 有谁对任何平台的api熟悉的话，可以帮帮我扩展导入或转发功能吗 👉👈。参考：扩展指南
   - icon: 🐳
-    title: web版
-    details: 使用 docker 部署，开箱即用
+    title: Web版
+    details: 开箱即用，使用 Docker 部署，可以充当自己的博客
   - icon: 💻
-    title: 桌面版（锐意制作中）
-    details: 正在尝试用 electron 制作 Tweblog 桌面版
+    title: 桌面版
+    details: 解压即用，支持 Windows、Linux、Mac，拥有Web版的全部功能
 ---
