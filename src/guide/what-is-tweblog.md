@@ -7,6 +7,10 @@
 
 是一个社交媒体博客化工具，目的是为了方便同时运营多个社交媒体，自己也在打算用这个从推特出逃。
 
+**Github：** https://github.com/haruki1953/Tweblog
+
+**网站/文档：** https://tweblog.com/
+
 **预览：** https://haruki.tweblog.com/
 
 **当前版本：** [0.0.2](./changelog.md#002)

@@ -92,3 +92,8 @@ docker logs Tweblog
 ```
 
 
+## 开发记录
+这里是 Tweblog 的开发记录，接口文档和笔记之类的都在这里，自己也是瞎写的比较乱：
+https://github.com/haruki1953/240630-web-note/tree/master/240810-tweet-blog-dev
+
+如果有愚蠢的错误之类的，还请拜托能告诉我🙏
