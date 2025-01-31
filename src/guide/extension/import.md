@@ -7,16 +7,17 @@
 
 ## 导入的数据结构
 前端对 JSON 数据进行解析，解析为这个结构
+
+前端中的类型标注：
 ```ts
 // tweet-blog-vue3: src\types\data\import.d.ts
-import type { PlatformKeyEnumValues } from '@/config' // src\config\platform.ts
 
 export type ImportPostItem = {
   // 帖子内容
   content: string
   // 帖子时间
   createdAt: string
-  // 帖子所属平台
+  // 帖子所属平台 src\config\platform.ts
   platform: PlatformKeyEnumValues
   // 帖子在所属平台的id
   platformId: string
@@ -26,11 +27,13 @@ export type ImportPostItem = {
   platformParentId: string | null
   // 帖子的图片
   importImages: {
+    // 图片时间
+    createdAt: string
     // 图片链接，后端将请求此url来获取图片
     link: string
     // 图片描述
     alt: string
-    // 图片所属平台
+    // 图片所属平台 src\config\platform.ts
     platform: PlatformKeyEnumValues
     // 图片在所属平台的id
     platformId: string

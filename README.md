@@ -60,11 +60,11 @@
 - bluesky导入与转发
 - mastodon导入与转发
 - xlog导入与转发
-- ......
 - i18n
 - rss
 - 动图、音视频支持
 - 移动端
+- ......
 
 ## ☎️ 交流讨论 | 问题反馈
 
@@ -84,3 +84,17 @@
 ![alt text](./src/guide/assets/image-5.jpg)
 
 ![alt text](./src/guide/assets/image-6.jpg)
+
+## VitePress 📝💨
+本仓库是 Tweblog 的官网/文档，使用 [VitePress](https://vitepress.dev/zh/) 制作
+```sh
+# Project Setup
+pnpm install
+
+# Compile and Hot-Reload for Development
+pnpm docs:dev
+
+# Type-Check, Compile and Minify for Production
+pnpm docs:build
+```
+
