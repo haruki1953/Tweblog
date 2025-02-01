@@ -3,17 +3,23 @@
 
 ---
 
-# 什么是 Tweblog <Badge type="tip" text="0.0.2" />
+# 什么是 Tweblog <Badge type="tip" text="1.0.0" />
 
 是一个社交媒体博客化工具，目的是为了方便同时运营多个社交媒体，自己也在打算用这个从推特出逃。
 
+::: info 为什么叫 Tweblog
+是 tweet + weblog 拼凑来的项目名，一看 tweblog.com 域名没被占用就索性叫这个了 😋
+:::
+
 **Github：** https://github.com/haruki1953/Tweblog
+
+**DockerHub：** https://hub.docker.com/r/harukiowo/tweblog
 
 **网站/文档：** https://tweblog.com/
 
 **预览：** https://haruki.tweblog.com/
 
-**当前版本：** [0.0.2](./changelog.md#002)
+**当前版本：** [1.0.0](./changelog.md#100)
 
 **技术栈：**
 - 前端 TypeScript + Vue3 + ElementPlus
@@ -53,7 +59,7 @@
 
 ## ☎️ 交流讨论 | 问题反馈
 
-加入 [discord群组](https://discord.gg/tYXj9ShnVr)
+加入 [discord群组](https://discord.gg/6pMkmMBnGH)
 
 
 ## 📸 截图

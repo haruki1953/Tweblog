@@ -30,7 +30,7 @@ docker restart Tweblog
     |   forward.json
     |   profile.json
     |   task.json
-    |   sqlite.db
+    |   database-1_0_0.sqlite
     \---public
         +---avatar
         |       3e58da4a-bebe-4c16-bf66-60db65ccff16.jpeg
@@ -71,7 +71,7 @@ docker restart Tweblog
 - **forward.json** 转发配置
 - **profile.json** 个人资料
 - **task.json** 任务进度信息
-- **sqlite.db** 数据库文件
+- **database-1_0_0.sqlite** 数据库文件
 - **public** 文件夹，被后端静态文件托管
 
 ::: info 配置文件特性

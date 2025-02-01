@@ -17,7 +17,7 @@ Web版 tweet-blog-hono
 ```
 
 ## 开发
-
+后端 tweet-blog-hono 启动
 ```sh
 # 安装项目依赖
 pnpm install
@@ -96,4 +96,4 @@ docker logs Tweblog
 这里是 Tweblog 的开发记录，接口文档和笔记之类的都在这里，自己也是瞎写的比较乱：
 https://github.com/haruki1953/240630-web-note/tree/master/240810-tweet-blog-dev
 
-如果有愚蠢的错误之类的，还请拜托能告诉我🙏
+如果有愚蠢的错误之类的，还请拜托能告诉我👉👈

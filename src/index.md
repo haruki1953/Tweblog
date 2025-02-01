@@ -14,7 +14,7 @@ hero:
       text: 快速开始
       link: /guide/getting-started
     - theme: alt
-      text: 指南
+      text: 什么是 Tweblog
       link: /guide/what-is-tweblog
     - theme: alt
       text: 预览
@@ -23,7 +23,7 @@ hero:
 features:
   - icon: 👀
     title: 什么是 Tweblog
-    details: 是 tweet + weblog 拼凑来的项目名
+    details: 是一个社交媒体博客化工具，目的是为了方便同时运营多个社交媒体，自己也在打算用这个从推特出逃。
   - icon: 🛒
     title: 推文导入
     details: 解析推特的 UserTweets 响应数据，实现推文导入
