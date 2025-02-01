@@ -45,7 +45,7 @@
 
 - Web版，开箱即用，使用 Docker 部署，可以充当自己的博客
 
-- 桌面版，解压即用，支持 Windows、Linux、Mac，拥有Web版的全部功能
+- 桌面版，解压即用，支持 Windows，拥有Web版的全部功能
 
 - 支持对于 X / Twitter 的导入与转发
 
