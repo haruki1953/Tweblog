@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted } from 'vue'
 
+// 使用 https://widgetbot.io/ 将 discord 嵌入了网站
+
 onMounted(() => {
   const script = document.createElement('script')
   script.src = "https://static.sakiko.top/cdn_jsdelivr_net/npm/@widgetbot/html-embed"

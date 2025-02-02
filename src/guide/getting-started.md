@@ -14,7 +14,7 @@ Tweblog 所有的版本更新都在 Github 以 release 形式发布，可在此�
 ::: tip 关于 Tweblog
 对 Tweblog 还不了解？看看 [什么是 Tweblog](./what-is-tweblog)
 
-桌面版的更多信息，再这里查看 [桌面版 使用](./desktop)
+桌面版的更多信息，在这里查看 [桌面版](./desktop)
 :::
 
 ### 在手机上使用

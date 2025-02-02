@@ -47,7 +47,7 @@
 
 具体逻辑见 `tweet-blog-hono: src\services\post-control\control-forward\forward-post\services.ts` 中的 `findParentPostSamePlatformPostId` 函数
 
-[转发配置与转发记录的解释](#删除无对应转发配置的记录)
+[转发配置与转发记录的解释](#转发配置与转发记录的解释)
 :::
 
 ![](./assets/2024-12-30_180606.jpg)
@@ -95,27 +95,37 @@ X 免费的账户24小时内只能发送17条推文，所以建议在自动转�
 ## 转发记录设置 <Badge type="tip" text="0.0.2" />
 ![](./assets/2025-01-14_180115.jpg)
 
-### 删除无对应转发配置的记录 <Badge type="tip" text="转发配置与转发记录的解释" />
+### 转发配置与转发记录的解释
 
 在数据库中，每一条转发记录都保存有其 `转发配置uuid`。而 `转发配置` 的详细信息则是保存在 `data/forward.json` 中。
 
-```prisma
-// tweet-blog-hono: prisma\schema.prisma
-// 数据库中的转发记录
-model PostForward {
-  id              String   @id @default(uuid())
-  // 平台标识，如 'X'
-  platform        String
-  // 帖子在X等平台的id
-  platformPostId  String
-  link            String
-  forwardAt       DateTime @default(now())
-  // 转发配置uuid
-  forwardConfigId String
-  post            Post     @relation("PostForwards", fields: [postId], references: [id], onDelete: Cascade)
-  postId          String
-}
+```ts
+// tweet-blog-hono: src\db\schema.ts
+
+// 帖子转发记录表
+export const postForwards = sqliteTable(
+  'post_forwards',
+  {
+    id: text('id').primaryKey().$default(() => uuidv4()),
+    // 平台标识，如 'X'
+    platform: text('platform', {
+      enum: platformKeyEnum
+    }).notNull(),
+    // 帖子在X等平台的id
+    platformPostId: text('platform_post_id').notNull(),
+    link: text('link').notNull(),
+    forwardAt: integer('forward_at', { mode: 'timestamp_ms' }).notNull().default(sql`(unixepoch() * 1000)`),
+    // 转发配置uuid
+    forwardConfigId: text('forward_config_id').notNull(),
+    postId: text('post_id').notNull().references(() => posts.id, { onDelete: 'cascade' })
+  },
+  (table) => [
+    index('idx-post_forwards-post_id').on(table.postId)
+  ]
+)
 ```
+
+### 删除无对应转发配置的记录
 
 如果删除了某个 `转发配置` ，其转发记录还是有的。点击此选项，将删除那些 `转发配置uuid` 所对应的 `转发配置` 已不存在的转发记录。
 

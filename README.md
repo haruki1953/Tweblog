@@ -36,7 +36,7 @@
 
 **预览：** https://haruki.tweblog.com/
 
-**当前版本：** [0.0.2](https://tweblog.com/guide/changelog#002)
+**当前版本：** [1.0.0](https://tweblog.com/guide/changelog#100)
 
 **技术栈：**
 - 前端 TypeScript + Vue3 + ElementPlus
