@@ -4,18 +4,18 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   srcDir: './src',
   title: "Tweblog",
-  description: "一个社交媒体博客化工具",
+  description: "一个社交媒体博客化工具，针对推特等平台的内容进行导入与转发",
   head: [
     ['link', { rel: 'icon', href: '/favicon256.png' }],
     ['meta', { property: 'og:title', content: 'Tweblog' }],
-    ['meta', { property: 'og:description', content: '一个社交媒体博客化工具' }],
+    ['meta', { property: 'og:description', content: '一个社交媒体博客化工具，针对推特等平台的内容进行导入与转发' }],
     ['meta', { property: 'og:image', content: '/social.jpg' }],
     ['meta', { property: 'og:url', content: 'https://tweblog.com/' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: 'Tweblog' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: 'Tweblog' }],
-    ['meta', { name: 'twitter:description', content: '一个社交媒体博客化工具' }],
+    ['meta', { name: 'twitter:description', content: '一个社交媒体博客化工具，针对推特等平台的内容进行导入与转发' }],
     ['meta', { name: 'twitter:image', content: '/social.jpg' }],
     ['meta', { name: 'twitter:site', content: '@harukiO_0' }]
   ],
