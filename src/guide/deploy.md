@@ -18,7 +18,7 @@ docker run -d \
 	-v ${HOME}/Tweblog/data:/app/data \
 	-p 51125:51125 \
 	--restart unless-stopped \
-	harukiowo/tweblog:1.0.0
+	harukiowo/tweblog:1.1.0
 ```
 
 部署完成后，使用命令查看日志

@@ -36,7 +36,7 @@
 
 **预览：** https://haruki.tweblog.com/
 
-**当前版本：** [1.0.0](https://tweblog.com/guide/changelog#100)
+**当前版本：** [1.1.0](https://tweblog.com/guide/changelog#110)
 
 **技术栈：**
 - 前端 TypeScript + Vue3 + ElementPlus
@@ -55,14 +55,15 @@
 
 - 支持对于 X / Twitter 的导入与转发
 
+- 支持对于 Telegram 的导入与转发
+
 - ......
 
 ## 💡 计划
 
 有谁对任何平台的api熟悉的话，可以帮帮我扩展导入或转发功能吗 👉👈 [扩展指南](https://tweblog.com/guide/extension/project) 
 
-- telegram导入与转发（锐意制作中）
-- discord导入与转发
+- discord导入与转发（锐意制作中）
 - bluesky导入与转发
 - mastodon导入与转发
 - xlog导入与转发
@@ -74,7 +75,7 @@
 
 ## ☎️ 交流讨论 | 问题反馈
 
-加入 [discord群组](https://discord.gg/6pMkmMBnGH)
+加入 [Discord群组](https://discord.gg/6pMkmMBnGH) [Telegram群组](https://t.me/tweblog)
 
 
 ## 📸 截图

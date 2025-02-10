@@ -57,13 +57,15 @@ export default defineConfig({
       {
         text: '导入说明',
         items: [
-          { text: 'X / Twitter', link: '/guide/feature/import/x-twitter' }
+          { text: 'X / Twitter', link: '/guide/feature/import/x-twitter' },
+          { text: 'Telegram', link: '/guide/feature/import/telegram' }
         ]
       },
       {
         text: '转发配置',
         items: [
-          { text: 'X / Twitter', link: '/guide/feature/forward/x-twitter' }
+          { text: 'X / Twitter', link: '/guide/feature/forward/x-twitter' },
+          { text: 'Telegram', link: '/guide/feature/forward/telegram' }
         ]
       },
       {
@@ -79,6 +81,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/haruki1953/Tweblog' },
+      { icon: 'telegram', link: 'https://t.me/tweblog' },
       { icon: 'discord', link: 'https://discord.gg/6pMkmMBnGH' },
       { icon: 'x', link: 'https://x.com/harukiO_0' },
     ],

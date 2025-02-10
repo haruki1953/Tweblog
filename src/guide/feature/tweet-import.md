@@ -29,6 +29,7 @@ JSON 数据一般需要通过 F12 开发者工具获取，这里以推特为例�
 
 ::: info 从更多平台导入，请参考：
 - [X / twitter](./import/x-twitter.md)
+- [Telegram](./import/telegram.md)
 :::
 
 ## 导入推文
