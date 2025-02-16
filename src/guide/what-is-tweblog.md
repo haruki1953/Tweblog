@@ -3,7 +3,7 @@
 
 ---
 
-# 什么是 Tweblog <Badge type="tip" text="1.1.0" />
+# 什么是 Tweblog <Badge type="tip" text="1.2.0" />
 
 是一个社交媒体博客化工具，目的是为了方便同时运营多个社交媒体，自己也在打算用这个从推特出逃。
 
@@ -19,7 +19,7 @@
 
 **预览：** https://haruki.tweblog.com/
 
-**当前版本：** [1.1.0](./changelog.md#110)
+**当前版本：** [1.2.0](./changelog.md#120)
 
 **技术栈：**
 - 前端 TypeScript + Vue3 + ElementPlus
@@ -42,14 +42,15 @@
 
 - 支持对于 Telegram 的导入与转发
 
+- 支持对于 Discord 的导入与转发
+
 - ......
 
 ## 💡 计划
 
 有谁对任何平台的api熟悉的话，可以帮帮我扩展导入或转发功能吗 👉👈 [扩展指南](./extension/project.md) 
 
-- discord导入与转发（锐意制作中）
-- bluesky导入与转发
+- bluesky导入与转发（锐意制作中）
 - mastodon导入与转发
 - xlog导入与转发
 - i18n

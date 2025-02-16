@@ -1,4 +1,4 @@
-# Telegram 转发配置
+# Telegram 转发配置 <Badge type="tip" text="1.1.0" />
 ![](./assets/2025-02-10_153615.jpg)
 
 ## 创建 Telegram 机器人

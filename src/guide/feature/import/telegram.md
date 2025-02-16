@@ -1,4 +1,4 @@
-# Telegram 获取用于导入的数据
+# Telegram 导入说明 <Badge type="tip" text="1.1.0" />
 ![](./assets/2025-02-10_152001.jpg)
 
 ## 进入开发者工具

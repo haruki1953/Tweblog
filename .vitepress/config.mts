@@ -58,14 +58,16 @@ export default defineConfig({
         text: '导入说明',
         items: [
           { text: 'X / Twitter', link: '/guide/feature/import/x-twitter' },
-          { text: 'Telegram', link: '/guide/feature/import/telegram' }
+          { text: 'Telegram', link: '/guide/feature/import/telegram' },
+          { text: 'Discord', link: '/guide/feature/import/discord' }
         ]
       },
       {
         text: '转发配置',
         items: [
           { text: 'X / Twitter', link: '/guide/feature/forward/x-twitter' },
-          { text: 'Telegram', link: '/guide/feature/forward/telegram' }
+          { text: 'Telegram', link: '/guide/feature/forward/telegram' },
+          { text: 'Discord', link: '/guide/feature/forward/discord' }
         ]
       },
       {

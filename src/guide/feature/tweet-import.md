@@ -9,6 +9,12 @@
 ## 获取 JSON 数据
 JSON 数据一般需要通过 F12 开发者工具获取，这里以推特为例。
 
+::: info 从更多平台导入，请参考：
+- [X / twitter](./import/x-twitter)
+- [Telegram](./import/telegram)
+- [Discord](./import/discord)
+:::
+
 1. 进入个人主页，按 F12 进入开发者工具，然后刷新页面。
 
 ![](./assets/2024-12-30_162236.jpg)
@@ -25,11 +31,6 @@ JSON 数据一般需要通过 F12 开发者工具获取，这里以推特为例�
 依次复制 JSON 数据，并点击解析，即可一次性导入更多的推文
 
 0.0.2 版本后，支持 [批量导入](#批量导入)
-:::
-
-::: info 从更多平台导入，请参考：
-- [X / twitter](./import/x-twitter.md)
-- [Telegram](./import/telegram.md)
 :::
 
 ## 导入推文

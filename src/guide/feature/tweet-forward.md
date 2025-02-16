@@ -9,6 +9,7 @@
 ::: tip 转发配置说明: 
 - [X / Twitter](./forward/x-twitter)
 - [Telegram](./forward/telegram)
+- [Discord](./forward/discord)
 :::
 
 ## 转发推文
