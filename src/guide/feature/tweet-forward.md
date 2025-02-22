@@ -4,13 +4,16 @@
 ## 转发配置
 想要转发推文，需要提前准备转发配置
 
-![](./assets/2024-12-30_174934.jpg)
-
 ::: tip 转发配置说明: 
 - [X / Twitter](./forward/x-twitter)
 - [Telegram](./forward/telegram)
 - [Discord](./forward/discord)
+- [Bluesky](./forward/bluesky)
 :::
+
+<!-- ![](./assets/2024-12-30_174934.jpg) -->
+![](./forward/assets/2025-02-22_094714.jpg)
+
 
 ## 转发推文
 点击推文卡片右下方绿色按钮，即可进入转发页面

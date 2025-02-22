@@ -59,7 +59,8 @@ export default defineConfig({
         items: [
           { text: 'X / Twitter', link: '/guide/feature/import/x-twitter' },
           { text: 'Telegram', link: '/guide/feature/import/telegram' },
-          { text: 'Discord', link: '/guide/feature/import/discord' }
+          { text: 'Discord', link: '/guide/feature/import/discord' },
+          { text: 'Bluesky', link: '/guide/feature/import/bluesky' }
         ]
       },
       {
@@ -67,7 +68,8 @@ export default defineConfig({
         items: [
           { text: 'X / Twitter', link: '/guide/feature/forward/x-twitter' },
           { text: 'Telegram', link: '/guide/feature/forward/telegram' },
-          { text: 'Discord', link: '/guide/feature/forward/discord' }
+          { text: 'Discord', link: '/guide/feature/forward/discord' },
+          { text: 'Bluesky', link: '/guide/feature/forward/bluesky' }
         ]
       },
       {
@@ -85,6 +87,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/haruki1953/Tweblog' },
       { icon: 'telegram', link: 'https://t.me/tweblog' },
       { icon: 'discord', link: 'https://discord.gg/6pMkmMBnGH' },
+      { icon: 'bluesky', link: 'https://bsky.app/profile/harukiowo.bsky.social' },
       { icon: 'x', link: 'https://x.com/harukiO_0' },
     ],
 

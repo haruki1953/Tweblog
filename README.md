@@ -36,7 +36,7 @@
 
 **预览：** https://haruki.tweblog.com/
 
-**当前版本：** [1.2.0](https://tweblog.com/guide/changelog#120)
+**当前版本：** [1.3.0](https://tweblog.com/guide/changelog#130)
 
 **技术栈：**
 - 前端 TypeScript + Vue3 + ElementPlus
@@ -59,13 +59,14 @@
 
 - 支持对于 Discord 的导入与转发
 
+- 支持对于 Bluesky 的导入与转发
+
 - ......
 
 ## 💡 计划
 
 有谁对任何平台的api熟悉的话，可以帮帮我扩展导入或转发功能吗 👉👈 [扩展指南](https://tweblog.com/guide/extension/project) 
 
-- bluesky导入与转发（锐意制作中）
 - mastodon导入与转发
 - xlog导入与转发
 - i18n

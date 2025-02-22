@@ -1,5 +1,6 @@
 # 推文导入
-![](./assets/2024-12-30_161640.jpg)
+<!-- ![](./assets/2024-12-30_161640.jpg) -->
+![](./import/assets/2025-02-22_091914.jpg)
 
 ## 功能原理
 主要的业务逻辑是在前端，前端对 JSON 数据进行解析，将整理后的数据发送至后端。不管从哪个平台导入，后端接收的数据结构是一样的。
@@ -13,6 +14,7 @@ JSON 数据一般需要通过 F12 开发者工具获取，这里以推特为例�
 - [X / twitter](./import/x-twitter)
 - [Telegram](./import/telegram)
 - [Discord](./import/discord)
+- [Bluesky](./import/bluesky)
 :::
 
 1. 进入个人主页，按 F12 进入开发者工具，然后刷新页面。

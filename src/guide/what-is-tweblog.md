@@ -1,14 +1,9 @@
----
-
-
----
-
-# 什么是 Tweblog <Badge type="tip" text="1.2.0" />
+# 什么是 Tweblog <Badge type="tip" text="1.3.0" />
 
 是一个社交媒体博客化工具，目的是为了方便同时运营多个社交媒体，自己也在打算用这个从推特出逃。
 
 ::: info 为什么叫 Tweblog
-是 tweet + weblog 拼凑来的项目名，一看 tweblog.com 域名没被占用就索性叫这个了 😋
+是 tweet + weblog 拼凑来的项目名
 :::
 
 **Github：** https://github.com/haruki1953/Tweblog
@@ -19,7 +14,7 @@
 
 **预览：** https://haruki.tweblog.com/
 
-**当前版本：** [1.2.0](./changelog.md#120)
+**当前版本：** [1.3.0](./changelog.md#130)
 
 **技术栈：**
 - 前端 TypeScript + Vue3 + ElementPlus
@@ -44,13 +39,14 @@
 
 - 支持对于 Discord 的导入与转发
 
+- 支持对于 Bluesky 的导入与转发
+
 - ......
 
 ## 💡 计划
 
 有谁对任何平台的api熟悉的话，可以帮帮我扩展导入或转发功能吗 👉👈 [扩展指南](./extension/project.md) 
 
-- bluesky导入与转发（锐意制作中）
 - mastodon导入与转发
 - xlog导入与转发
 - i18n
