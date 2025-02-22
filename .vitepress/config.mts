@@ -1,9 +1,18 @@
 import { defineConfig } from 'vitepress'
 
+// 是否为本地文档：本地文档构建时应启用
+export const isLocalDocs = false
+// export const isLocalDocs = true
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  // // 本地文档构建时启用
-  // base: '/docs/',
+  base: (() => {
+    // 为本地文档时，路径为docs
+    if (isLocalDocs) {
+      return '/docs/'
+    }
+    return '/'
+  })(),
   srcDir: './src',
   title: "Tweblog",
   description: "一个社交媒体博客化工具，针对推特等平台的内容进行导入与转发",
