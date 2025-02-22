@@ -2,6 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  // // 本地文档构建时启用
+  // base: '/docs/',
   srcDir: './src',
   title: "Tweblog",
   description: "一个社交媒体博客化工具，针对推特等平台的内容进行导入与转发",
