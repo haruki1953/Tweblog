@@ -10,9 +10,9 @@
 
 **DockerHub：** https://hub.docker.com/r/harukiowo/tweblog
 
-**网站/文档：** https://tweblog.com/
+**网站/文档：** https://tweblog.sakiko.top/
 
-**预览：** https://haruki.tweblog.com/
+**预览：** https://haruki.sakiko.top/
 
 **当前版本：** [1.3.0](./changelog.md#130)
 

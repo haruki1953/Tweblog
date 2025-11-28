@@ -38,7 +38,7 @@ docker logs Tweblog
   默认用户名: admin
   默认密码: adminadmin
 
-  https://tweblog.com/
+  https://tweblog.sakiko.top/
   https://github.com/haruki1953/Tweblog
   
   ========================================

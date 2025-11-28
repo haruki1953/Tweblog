@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://tweblog.com/favicon.svg" alt="cover" style="width: 30%;">
+  <img src="https://tweblog.sakiko.top/favicon.svg" alt="cover" style="width: 30%;">
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
 
 
 这个仓库是 Tweblog 的官网/文档，同时作为整个项目的主仓库（如果愿意的话 star 这个仓库就好）
-- 网站 https://tweblog.com
+- 网站 https://tweblog.sakiko.top
 - 文档 https://github.com/haruki1953/Tweblog
 - 后端 https://github.com/haruki1953/tweet-blog-hono
 - 前端1（管理） https://github.com/haruki1953/tweet-blog-vue3
@@ -32,18 +32,18 @@
 
 **DockerHub：** https://hub.docker.com/r/harukiowo/tweblog
 
-**网站/文档：** https://tweblog.com/
+**网站/文档：** https://tweblog.sakiko.top/
 
-**预览：** https://haruki.tweblog.com/
+**预览：** https://haruki.sakiko.top/
 
-**当前版本：** [1.3.0](https://tweblog.com/guide/changelog#130)
+**当前版本：** [1.3.0](https://tweblog.sakiko.top/guide/changelog#130)
 
 **技术栈：**
 - 前端 TypeScript + Vue3 + ElementPlus
 - 后端 TypeScript + Node + Hono
 - 数据库 Sqlite + Drizzle
 
-想开始尝试？跳到 [快速开始](https://tweblog.com/guide/getting-started)
+想开始尝试？跳到 [快速开始](https://tweblog.sakiko.top/guide/getting-started)
 
 ## ✨ 功能
 
@@ -65,7 +65,7 @@
 
 ## 💡 计划
 
-有谁对任何平台的api熟悉的话，可以帮帮我扩展导入或转发功能吗 👉👈 [扩展指南](https://tweblog.com/guide/extension/project) 
+有谁对任何平台的api熟悉的话，可以帮帮我扩展导入或转发功能吗 👉👈 [扩展指南](https://tweblog.sakiko.top/guide/extension/project) 
 
 - mastodon导入与转发
 - xlog导入与转发

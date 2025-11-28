@@ -21,7 +21,7 @@ export default defineConfig({
     ['meta', { property: 'og:title', content: 'Tweblog' }],
     ['meta', { property: 'og:description', content: '一个社交媒体博客化工具，针对推特等平台的内容进行导入与转发' }],
     ['meta', { property: 'og:image', content: '/social.jpg' }],
-    ['meta', { property: 'og:url', content: 'https://tweblog.com/' }],
+    ['meta', { property: 'og:url', content: 'https://tweblog.sakiko.top/' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: 'Tweblog' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
