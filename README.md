@@ -83,17 +83,17 @@
 
 ## 📸 截图
 
-![alt text](./src/guide/assets/image.jpg)
+![alt text](./Tweblog/src/guide/assets/image.jpg)
 
-![alt text](./src/guide/assets/image-1.jpg)
+![alt text](./Tweblog/src/guide/assets/image-1.jpg)
 
-![alt text](./src/guide/assets/image-2.jpg)
+![alt text](./Tweblog/src/guide/assets/image-2.jpg)
 
-![alt text](./src/guide/assets/image-3.jpg)
+![alt text](./Tweblog/src/guide/assets/image-3.jpg)
 
-![alt text](./src/guide/assets/image-5.jpg)
+![alt text](./Tweblog/src/guide/assets/image-5.jpg)
 
-![alt text](./src/guide/assets/image-6.jpg)
+![alt text](./Tweblog/src/guide/assets/image-6.jpg)
 
 ## VitePress 📝💨
 本仓库是 Tweblog 的官网/文档，使用 [VitePress](https://vitepress.dev/zh/) 制作
