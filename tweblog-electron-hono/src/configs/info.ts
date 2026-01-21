@@ -1,7 +1,7 @@
 const appPackageJsonInfo = {
   // 为了方便正则替换
   // eslint-disable-next-line @typescript-eslint/quotes, quote-props, @typescript-eslint/comma-dangle
-  "version": "1.3.0.8-github-actions-test",
+  "version": "1.3.0",
 }
 
 export const appInfo = {
