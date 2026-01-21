@@ -33,6 +33,6 @@ src\config\info.ts
 
 正则替换
 ```
-"version": "1.3.0.5-github-actions-test",
+"version": "1.3.0.6-github-actions-test",
 "version": "version",
 ```
