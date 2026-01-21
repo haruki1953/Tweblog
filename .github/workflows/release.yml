@@ -246,6 +246,7 @@ jobs:
         with:
           node-version: 22
           cache: 'yarn'
+          cache-dependency-path: tweblog-electron-hono/yarn.lock
 
       - name: Install deps
         run: |
@@ -308,6 +309,7 @@ jobs:
         with:
           node-version: 22
           cache: 'yarn'
+          cache-dependency-path: tweblog-electron-hono/yarn.lock
   
       - name: Install deps
         run: |
@@ -370,6 +372,7 @@ jobs:
         with:
           node-version: 22
           cache: 'yarn'
+          cache-dependency-path: tweblog-electron-hono/yarn.lock
   
       - name: Install deps
         run: |
