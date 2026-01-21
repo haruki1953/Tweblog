@@ -1,7 +1,7 @@
 const appPackageJsonInfo = {
   // 为了方便正则替换
   // eslint-disable-next-line prettier/prettier
-  "version": "1.3.0.4-github-actions-test",
+  "version": "1.3.0.5-github-actions-test",
 }
 
 export const appInfo = {
