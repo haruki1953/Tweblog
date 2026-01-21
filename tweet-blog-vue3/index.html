@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="icon" href="/favicon256.png">
+  <title>Tweblog</title>
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Tweblog">
+  <meta property="og:description" content="一个社交媒体博客化工具，针对推特等平台的内容进行导入与转发">
+  <meta property="og:image" content="/social.jpg">
+  <meta property="og:url" content="https://tweblog.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tweblog">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tweblog">
+  <meta name="twitter:description" content="一个社交媒体博客化工具，针对推特等平台的内容进行导入与转发">
+  <meta name="twitter:image" content="/social.jpg">
+  <meta name="twitter:site" content="@harukiO_0">
+
+  <link rel="stylesheet" href="/fontawesome-free-6.7.1-web/css/fontawesome.min.css">
+  <link rel="stylesheet" href="/fontawesome-free-6.7.1-web/css/brands.min.css">
+  <link rel="stylesheet" href="/fontawesome-free-6.7.1-web/css/solid.min.css">
+  <link rel="stylesheet" href="/fontawesome-free-6.7.1-web/css/regular.min.css">
+
+  <style>
+    /* 在 index.html 中就初始化必要的颜色，以避免加载过程中的白屏 */
+    :root {
+      --vt-c-white: #ffffff;
+      --vt-c-black: #1b1b1f;
+      --vt-c-text-light-1: var(--vt-c-indigo);
+      --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+      --color-background: var(--vt-c-white);
+      --color-text: var(--vt-c-text-light-1);
+    }
+
+    :root.dark {
+      --color-background: var(--vt-c-black);
+      --color-text: var(--vt-c-text-dark-2);
+    }
+
+    html {
+      color: var(--color-text);
+      background: var(--color-background);
+      /* 初始化滚动条，避免加载瞬间的抖动 */
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+
+    * {
+      /* 窄滚动条 */
+      scrollbar-width: thin;
+      /* 滑块颜色 + 轨道透明 */
+      scrollbar-color: var(--my-neutral) transparent;
+    }
+
+    body {
+      color: var(--color-text);
+      background: var(--color-background);
+    }
+
+    /* 伴随 index.html 的加载遮罩，将在 App.vue onMounted 中取消 */
+    #index-mask {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: inherit;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.3s;
+    }
+
+    #index-loading {
+      transition: opacity 0.3s;
+    }
+
+    #index-loading .decoration-box {
+      display: flex;
+    }
+
+    #index-loading .dot-box {
+      --dot-size: 20px;
+      --dot-interval: 0.24s;
+      --dot-delay: 0s;
+      width: var(--dot-size);
+      height: var(--dot-size);
+      border-radius: calc(var(--dot-size) / 2);
+      margin: 0 10px;
+      transition: transform 0.5s;
+      transform: scale(1);
+      animation-name: loading;
+      animation-duration: calc(var(--dot-interval) * 5 + 0.3s);
+      animation-iteration-count: infinite;
+    }
+
+    #index-loading .sakiko {
+      background-color: #7899CC;
+      animation-delay: var(--dot-delay);
+    }
+
+    #index-loading .umiri {
+      background-color: #5a7583;
+      animation-delay: calc((var(--dot-interval) * 1) + var(--dot-delay));
+    }
+
+    #index-loading .uika {
+      background-color: #BB9854;
+      animation-delay: calc((var(--dot-interval) * 2) + var(--dot-delay));
+    }
+
+    #index-loading .nyamu {
+      background-color: #AB4378;
+      animation-delay: calc((var(--dot-interval) * 3) + var(--dot-delay));
+    }
+
+    #index-loading .mutsumi {
+      background-color: #799978;
+      animation-delay: calc((var(--dot-interval) * 4) + var(--dot-delay));
+    }
+
+    @keyframes loading {
+      0% {
+        transform: scale(1);
+      }
+
+      10% {
+        transform: scale(1.5);
+      }
+
+      33% {
+        transform: scale(1);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+  <script>
+    /* 在 index.html 中就初始化颜色，以避免加载过程中的白屏 */
+    // 读取本地存储中的 vueuse-color-scheme 值
+    const scheme = localStorage.getItem('vueuse-color-scheme') || 'auto';
+    // 根据 vueuse-color-scheme 的值设置主题
+    if (scheme === 'dark' || (scheme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+
+    // 禁用滚动，在 App.vue 中恢复，同时防止抖动
+    document.documentElement.style.overflowY = 'hidden'
+  </script>
+</head>
+
+<body>
+  <div id="index-mask">
+    <div id="index-loading">
+      <div class="decoration-box">
+        <div class="dot-box sakiko"></div>
+        <div class="dot-box umiri"></div>
+        <div class="dot-box uika"></div>
+        <div class="dot-box nyamu"></div>
+        <div class="dot-box mutsumi"></div>
+      </div>
+    </div>
+  </div>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+@use './base.css';
+@use './transition.scss';
+@use './animation.scss';
+@use './control.scss';
+
+@function color-lighten($color, $step) {
+  @return mix(white, $color, $step * 10%);
+}
+
+@function color-darken($color, $step) {
+  @return mix(black, $color, $step * 10%);
+}
+
+$types: (
+  primary: #7899CC,
+  success: #799978,
+  // info: #345566,
+  info: #5a7583,
+  warning: #BB9854,
+  danger: #AB4378,
+  error: #AB4378
+);
+
+// $light-steps: 3, 5, 7, 8, 9;
+// $dark-steps: 2;
+
+$light-steps: 1, 2, 3, 4, 5, 6, 7, 8, 9;
+$dark-steps: 1, 2, 3, 4, 5, 6, 7, 8, 9;
+
+:root:root {
+  @each $type, $color in $types {
+    --el-color-#{$type}: #{$color};
+
+    @each $step in $light-steps {
+      --el-color-#{$type}-light-#{$step}: #{color-lighten($color, $step)};
+    }
+
+    @each $step in $dark-steps {
+      --el-color-#{$type}-dark-#{$step}: #{color-darken($color, $step)};
+    }
+  }
+}
+
+:root:root.dark {
+  @each $type, $color in $types {
+    --el-color-#{$type}: #{$color};
+
+    @each $step in $light-steps {
+      --el-color-#{$type}-light-#{$step}: #{color-darken($color, $step)};
+    }
+
+    @each $step in $dark-steps {
+      --el-color-#{$type}-dark-#{$step}: #{color-lighten($color, $step)};
+    }
+  }
+}
+
+:root {
+  // 基础颜色
+  $my-neutral: rgba(140, 147, 157, 1);
+  --my-neutral: #{$my-neutral};
+
+  // 使用循环生成不同透明度的颜色
+  @for $i from 1 through 9 {
+    $opacity: $i * 0.1; // 透明度从 0.1 到 0.9
+    --my-neutral-a#{$i}: rgba(140, 147, 157, #{$opacity});
+  }
+}
+
+.el-dialog.el-dialog {
+  border-radius: 20px;
+}
+
+.el-message.el-message {
+  border-radius: 20px;
+  transition:
+    box-shadow .5s,
+    border .5s,
+    background-color .5s,
+    opacity var(--el-transition-duration),
+    transform .4s,
+    top .4s;
+  box-shadow: var(--el-box-shadow-light);
+  --el-message-bg-color: var(--color-background-soft);
+  --el-message-border-color: transparent;
+
+  .el-message__badge {
+    .el-badge__content {
+      // transition: border 0.5s;
+      border: none;
+    }
+  }
+}
+
+.el-notification.right {
+  // width: var(--el-notification-width);
+  transition:
+    box-shadow .5s,
+    border .5s,
+    background-color .5s,
+    opacity var(--el-transition-duration),
+    transform var(--el-transition-duration),
+    left var(--el-transition-duration),
+    // right var(--el-transition-duration), 
+    top .4s,
+    bottom var(--el-transition-duration);
+
+  @media (max-width: 360px) {
+    width: 280px;
+  }
+}
+
+.el-image-viewer__wrapper {
+  // 原来是因为这个导致了白边问题
+  // :focus-visible {
+  //   outline: -webkit-focus-ring-color auto 1px;
+  // }
+  outline: none;
+
+  .el-image-viewer__btn.el-image-viewer__btn {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    border-color: var(--color-border);
+
+    &:hover {
+      .el-icon {
+        color: var(--color-text-soft);
+        transform: scale(1.1, 1.1);
+      }
+    }
+
+    &.el-image-viewer__actions {
+      border-radius: 25px;
+      bottom: 20px;
+      height: 50px;
+
+      &:hover {
+        .el-icon {
+          color: var(--color-text);
+          transform: scale(1, 1);
+        }
+      }
+
+      .el-icon {
+        &:hover {
+          color: var(--color-text-soft);
+          transform: scale(1.1, 1.1);
+        }
+      }
+
+      .el-image-viewer__actions__inner {
+        color: var(--color-text);
+      }
+    }
+
+    .el-icon {
+      transition: transform 0.2s;
+    }
+  }
+
+  &.viewer-fade-enter-active {
+    animation: viewer-fade-in-only-fade 0.5s;
+  }
+}
+
+
+@keyframes viewer-fade-in-only-fade {
+  0% {
+    opacity: 0;
+    // transform: translate3d(0,-20px,0);
+  }
+
+  // 延迟，避免闪烁
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    // transform: translateZ(0);
+  }
+}
+
+.el-loading-mask.el-loading-mask {
+  transition:
+    opacity var(--el-transition-duration),
+    background-color 0.5s;
+}

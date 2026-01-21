@@ -1,0 +1,231 @@
+.use-control-styles {
+  .button-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .el-button {
+      margin-bottom: 4px;
+
+      span,
+      .el-icon {
+        // color: var(--color-background);
+        font-weight: bold;
+      }
+
+      &.el-button--small {
+
+        span,
+        .el-icon {
+          // color: var(--color-background);
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .button-box {
+      justify-content: center;
+    }
+
+    .button-box.not-center {
+      justify-content: flex-end;
+    }
+  }
+
+  .control-box {
+    margin-bottom: 20px;
+    background-color: var(--color-background-soft);
+    border-radius: 20px;
+    transition:
+      background-color 0.5s,
+      box-shadow 0.5s;
+
+    &:hover {
+      box-shadow: var(--el-box-shadow-lighter);
+    }
+  }
+
+  .control-row {
+    padding: 15px 20px;
+
+    &.decoration {
+      padding: 0;
+      height: 25px;
+    }
+  }
+
+  .control-lable {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-text-soft);
+    margin: 0 0 15px 10px;
+  }
+
+  .control-lable-with-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5px 15px 10px;
+
+    .lable {
+      font-size: 14px;
+      font-weight: bold;
+      color: var(--color-text-soft);
+    }
+
+    .link {
+      font-size: 13px;
+      font-weight: bold;
+      color: var(--el-color-primary); // 未访问链接的颜色
+      text-decoration: none; // 平时不显示下划线
+
+      &:hover {
+        color: var(--el-color-success); // 悬停时的颜色
+        text-decoration: underline; // 悬停时显示下划线
+      }
+    }
+  }
+
+  .control-divider {
+    // height: 2px;
+    // background-color: var(--color-background);
+    // transition: background-color 0.5s;
+    border-top: 2.4px solid var(--color-background); // divider
+    transition: border 0.5s;
+  }
+
+  .input-lable {
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--color-text-soft);
+    margin: 0 0 2px 25px;
+    user-select: none;
+  }
+
+  .control-input {
+    display: flex;
+    width: 100%;
+
+    // :deep() {
+    .el-input__wrapper {
+      padding: 1px 20px;
+      border-radius: 20px;
+      background-color: var(--color-background);
+      transition: all 0.5s;
+      overflow: hidden;
+
+      .el-input__inner {
+        margin-left: 5px;
+      }
+    }
+
+    .el-input-number__decrease,
+    .el-input-number__increase {
+      background-color: transparent;
+      transition:
+        border 0.5s,
+        color 0.2s;
+    }
+
+    // }
+  }
+
+  .control-textarea {
+    overflow: hidden;
+
+    // :deep() {
+    .el-textarea__inner {
+      padding: 10px 20px;
+      border-radius: 20px;
+      background-color: var(--color-background);
+      transition:
+        background-color 0.5s,
+        box-shadow 0.5s;
+    }
+
+    // }
+  }
+
+  .control-radio {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    // :deep() {
+    .el-radio-group {
+      justify-content: center;
+    }
+
+    .el-radio {
+      margin: 0 16px;
+
+      .el-radio__inner {
+        border: none;
+        background-color: var(--color-background-mute);
+        transition:
+          background-color 0.5s,
+          border 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+
+        &::after {
+          display: none;
+          background-color: var(--color-background);
+        }
+      }
+
+      .el-radio__label {
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--color-text-soft);
+      }
+
+      &.is-checked {
+        .el-radio__inner {
+          border: 5px solid var(--el-color-primary);
+          background-color: var(--color-background);
+        }
+
+        .el-radio__label {
+          color: var(--el-color-primary);
+        }
+      }
+    }
+
+    // }
+  }
+
+  .form-box {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .form-row {
+    margin-bottom: 10px;
+  }
+
+  .el-input.consolas {
+    .el-input__inner {
+      font-family: 'Consolas', 'Courier New', monospace;
+    }
+  }
+
+  .el-input.bold {
+    .el-input__inner {
+      font-weight: bold;
+    }
+  }
+
+  .el-textarea.consolas {
+    .el-textarea__inner {
+      font-family: 'Consolas', 'Courier New', monospace;
+    }
+  }
+
+  .el-textarea.bold {
+    .el-textarea__inner {
+      font-weight: bold;
+    }
+  }
+}

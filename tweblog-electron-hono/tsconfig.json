@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true, // 使得 TS 能兼容 ES6 和 CommonJS 的导入导出方式
+    "strict": true,
+    "skipLibCheck": true,
+    "types": [
+      "node"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "outDir": "./dist",
+    "rootDir": "./src",
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "drizzle.config.ts"],
+}

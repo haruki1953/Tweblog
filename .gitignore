@@ -1,0 +1,9 @@
+test
+dist
+temp
+out
+.DS_Store
+/note/.obsidian/workspace.json
+node_modules
+/other/
+.git_removed

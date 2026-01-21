@@ -1,0 +1,19 @@
+.blinking-1s {
+  animation: blink 1s infinite;
+}
+
+.blinking-2s {
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+  
+  50% {
+    opacity: 0;
+  }
+}
