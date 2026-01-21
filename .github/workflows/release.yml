@@ -220,7 +220,7 @@ jobs:
           - windows-11-arm
           - ubuntu-24.04
           - ubuntu-24.04-arm
-          - macos-13
+          - macos-15-intel
           - macos-15
     runs-on: ${{ matrix.os }}
     needs: [frontend-admin, frontend-public, frontend-desktop, frontend-docs]
