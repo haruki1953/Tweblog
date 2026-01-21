@@ -209,17 +209,24 @@ jobs:
           push-to-registry: false
 
   # -------------------------------------------------------
-  # Electron 构建（Windows）
+  # Electron 构建（tweblog-electron-hono）
   # -------------------------------------------------------
-  electron-windows:
-    runs-on: windows-latest
+  electron-build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - windows-2025
+          - windows-11-arm
+          - ubuntu-24.04
+          - ubuntu-24.04-arm
+          - macos-13
+          - macos-15
+    runs-on: ${{ matrix.os }}
     needs: [frontend-admin, frontend-public, frontend-desktop, frontend-docs]
+
     steps:
       - uses: actions/checkout@v4
-
-      # - name: Extract version
-      #   shell: bash
-      #   run: echo "VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_ENV
 
       - uses: actions/download-artifact@v4
         with:
@@ -258,148 +265,12 @@ jobs:
           cd tweblog-electron-hono
           yarn build
 
-      - name: Build Electron (Windows)
+      - name: Build Electron
         run: |
           cd tweblog-electron-hono
           yarn make
 
-      - name: Upload Windows ZIP
-        uses: svenstaro/upload-release-action@v2
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: tweblog-electron-hono/out/make/*/*/*/*
-          tag: ${{ github.ref }}
-          overwrite: true
-          file_glob: true
-
-      - name: Attestation
-        uses: actions/attest-build-provenance@v3
-        with:
-          subject-path: tweblog-electron-hono/out/make/*/*/*/*
-
-  # -------------------------------------------------------
-  # Electron 构建（Linux）
-  # -------------------------------------------------------
-  electron-linux:
-    runs-on: ubuntu-latest
-    needs: [frontend-admin, frontend-public, frontend-desktop, frontend-docs]
-    steps:
-      - uses: actions/checkout@v4
-
-      # - name: Extract version
-      #   run: echo "VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_ENV
-
-      - uses: actions/download-artifact@v4
-        with:
-          name: public-dist
-          path: tweblog-electron-hono/static
-
-      - uses: actions/download-artifact@v4
-        with:
-          name: admin-dist
-          path: tweblog-electron-hono/static/admin
-
-      - uses: actions/download-artifact@v4
-        with:
-          name: desktop-dist
-          path: tweblog-electron-hono/static/desktop
-
-      - uses: actions/download-artifact@v4
-        with:
-          name: docs-dist
-          path: tweblog-electron-hono/static/docs
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: 'yarn'
-          cache-dependency-path: tweblog-electron-hono/yarn.lock
-  
-      - name: Install deps
-        run: |
-          cd tweblog-electron-hono
-          yarn install --frozen-lockfile
-
-      - name: Build dist js
-        run: |
-          cd tweblog-electron-hono
-          yarn build
-
-      - name: Build Electron (Linux)
-        run: |
-          cd tweblog-electron-hono
-          yarn make
-
-      - name: Upload Linux ZIP
-        uses: svenstaro/upload-release-action@v2
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: tweblog-electron-hono/out/make/*/*/*/*
-          tag: ${{ github.ref }}
-          overwrite: true
-          file_glob: true
-
-      - name: Attestation
-        uses: actions/attest-build-provenance@v3
-        with:
-          subject-path: tweblog-electron-hono/out/make/*/*/*/*
-
-  # -------------------------------------------------------
-  # Electron 构建（macOS）
-  # -------------------------------------------------------
-  electron-macos:
-    runs-on: macos-latest
-    needs: [frontend-admin, frontend-public, frontend-desktop, frontend-docs]
-    steps:
-      - uses: actions/checkout@v4
-
-      # - name: Extract version
-      #   run: echo "VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_ENV
-
-      - uses: actions/download-artifact@v4
-        with:
-          name: public-dist
-          path: tweblog-electron-hono/static
-
-      - uses: actions/download-artifact@v4
-        with:
-          name: admin-dist
-          path: tweblog-electron-hono/static/admin
-
-      - uses: actions/download-artifact@v4
-        with:
-          name: desktop-dist
-          path: tweblog-electron-hono/static/desktop
-
-      - uses: actions/download-artifact@v4
-        with:
-          name: docs-dist
-          path: tweblog-electron-hono/static/docs
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: 'yarn'
-          cache-dependency-path: tweblog-electron-hono/yarn.lock
-  
-      - name: Install deps
-        run: |
-          cd tweblog-electron-hono
-          yarn install --frozen-lockfile
-
-      - name: Build dist js
-        run: |
-          cd tweblog-electron-hono
-          yarn build
-
-      - name: Build Electron (macOS)
-        run: |
-          cd tweblog-electron-hono
-          yarn make
-
-      - name: Upload macOS ZIP
+      - name: Upload Release ZIP
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
