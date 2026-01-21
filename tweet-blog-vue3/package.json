@@ -1,6 +1,6 @@
 {
   "name": "tweet-blog-vue3",
-  "version": "1.3.0",
+  "version": "1.3.0.1-github-actions-test",
   "private": true,
   "type": "module",
   "scripts": {
