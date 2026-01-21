@@ -1,10 +1,16 @@
+const appPackageJsonInfo = {
+  // 为了方便正则替换
+  // eslint-disable-next-line prettier/prettier
+  "version": "1.3.0",
+}
+
 export const appInfo = {
   copyright: {
     text: 'Tweblog',
     link: 'https://github.com/haruki1953/Tweblog'
   },
   version: {
-    text: '1.3.0',
+    text: appPackageJsonInfo.version,
     link: 'https://github.com/haruki1953/Tweblog'
   },
   officialWebsite: {

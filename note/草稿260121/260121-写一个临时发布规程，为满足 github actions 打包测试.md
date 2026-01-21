@@ -30,3 +30,9 @@ tweblog-electron-vue3
 package.json
 src\config\info.ts
 ```
+
+正则替换
+```
+"version": "1.3.0",
+"version": "version",
+```
