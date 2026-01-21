@@ -253,6 +253,11 @@ jobs:
           cd tweblog-electron-hono
           yarn install --frozen-lockfile
 
+      - name: Build dist js
+        run: |
+          cd tweblog-electron-hono
+          yarn build
+
       - name: Build Electron (Windows)
         run: |
           cd tweblog-electron-hono
@@ -316,6 +321,11 @@ jobs:
           cd tweblog-electron-hono
           yarn install --frozen-lockfile
 
+      - name: Build dist js
+        run: |
+          cd tweblog-electron-hono
+          yarn build
+
       - name: Build Electron (Linux)
         run: |
           cd tweblog-electron-hono
@@ -378,6 +388,11 @@ jobs:
         run: |
           cd tweblog-electron-hono
           yarn install --frozen-lockfile
+
+      - name: Build dist js
+        run: |
+          cd tweblog-electron-hono
+          yarn build
 
       - name: Build Electron (macOS)
         run: |
