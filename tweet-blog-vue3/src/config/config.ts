@@ -11,8 +11,8 @@
 // const staticBaseUrl = '/'
 
 // // 测试，直接控制已部署的
-// const apiBaseUrl = 'https://haruki.tweblog.com/api/'
-// const staticBaseUrl = 'https://haruki.tweblog.com/'
+// const apiBaseUrl = 'https://haruki.tweblog.sakiko.top/api/'
+// const staticBaseUrl = 'https://haruki.tweblog.sakiko.top/'
 
 let apiBaseUrl: string
 let staticBaseUrl: string

@@ -63,7 +63,7 @@ const storeDefaultProfile: ProfileStore = {
   name: '',
   bio: '',
   socialMedias: [],
-  aboutMarkdown: '# 关于 Tweblog\n\n**Tweblog 是一个社交媒体博客化工具**，目的是为了方便同时运营多个社交媒体，也可以用它来充当自己的博客。\n\n**官网/文档：** [tweblog.com](https://tweblog.com)\n',
+  aboutMarkdown: '# 关于 Tweblog\n\n**Tweblog 是一个社交媒体博客化工具**，目的是为了方便同时运营多个社交媒体，也可以用它来充当自己的博客。\n\n**官网/文档：** [tweblog.sakiko.top](https://tweblog.sakiko.top)\n',
   externalLinks: [],
   externalIcons: []
 }
