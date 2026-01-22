@@ -8,7 +8,7 @@
 ## [1.4.0] - 2026-01-22
 
 ### 🔧 变更
-- 将项目仓库整理为一个仓库以利于CICD，完善文档 by @haruki1953 in https://github.com/Tweblog/tweblog/pull/2 https://github.com/Tweblog/tweblog/pull/1
+- 将项目仓库整理为一个仓库以利于CICD，完善文档 by @haruki1953 in https://github.com/Tweblog/tweblog/pull/2
 
 ### 🐛 修复
 - 解决 X推文导入解析失败问题 https://github.com/Tweblog/tweblog/issues/1
