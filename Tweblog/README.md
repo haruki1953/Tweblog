@@ -30,7 +30,8 @@
 
 **Github：** https://github.com/Tweblog/tweblog
 
-**DockerHub：** https://hub.docker.com/r/harukiowo/tweblog
+<!-- **DockerHub：** https://hub.docker.com/r/harukiowo/tweblog -->
+**GHCR：** https://github.com/Tweblog/tweblog/pkgs/container/tweblog
 
 **网站/文档：**
 - https://tweblog.sakiko.top/

@@ -1,6 +1,7 @@
 # Web版
 
-**DockerHub：** https://hub.docker.com/r/harukiowo/tweblog
+<!-- **DockerHub：** https://hub.docker.com/r/harukiowo/tweblog -->
+**GHCR：** https://github.com/Tweblog/tweblog/pkgs/container/tweblog
 
 目前只能用 docker 部署 Tweblog Web版，部署前请确认已经安装了 [docker](https://docs.docker.com/)
 
@@ -11,6 +12,8 @@ cd ${HOME}/Tweblog
 ```
 
 ## 使用 docker 部署 Tweblog
+可在此查看最新镜像：https://github.com/Tweblog/tweblog/pkgs/container/tweblog
+
 运行以下命令
 ```sh
 docker run -d \
@@ -18,7 +21,7 @@ docker run -d \
 	-v ${HOME}/Tweblog/data:/app/data \
 	-p 51125:51125 \
 	--restart unless-stopped \
-	harukiowo/tweblog:1.3.0
+	ghcr.io/Tweblog/tweblog:latest
 ```
 
 部署完成后，使用命令查看日志
