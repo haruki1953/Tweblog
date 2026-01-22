@@ -67,12 +67,26 @@ const forwardSettingDataDefaultBluesky: z.infer<
   Identifier: '',
   Password: ''
 }
+// PocketChat
+const forwardSettingDataSchemaPocketChat = z.object({
+  'PocketChat Host': z.string().default(''),
+  'Username or Email': z.string().default(''),
+  Password: z.string().default('')
+})
+const forwardSettingDataDefaultPocketChat: z.infer<
+  typeof forwardSettingDataSchemaPocketChat
+> = {
+  'PocketChat Host': '',
+  'Username or Email': '',
+  Password: ''
+}
 // 全部平台的 forwardSettingDataDefault
 export const forwardSettingDataDefaultAll = {
   ...forwardSettingDataDefaultX,
   ...forwardSettingDataDefaultTelegram,
   ...forwardSettingDataDefaultDiscord,
-  ...forwardSettingDataDefaultBluesky
+  ...forwardSettingDataDefaultBluesky,
+  ...forwardSettingDataDefaultPocketChat
 }
 
 // 关于导入与导出所需的平台数据
@@ -115,10 +129,26 @@ export const platformKeyMap = {
     couldForward: true,
     forwardSettingDataSchema: forwardSettingDataSchemaBluesky,
     forwardSettingDataDefault: forwardSettingDataDefaultBluesky
+  },
+  PocketChat: {
+    key: 'PocketChat',
+    name: 'PocketChat',
+    fontawesomeClass: 'fa-brands fa-tweblog-custom-font-icons-pocket-chat',
+    couldImport: false,
+    couldForward: true,
+    forwardSettingDataSchema: forwardSettingDataSchemaPocketChat,
+    forwardSettingDataDefault: forwardSettingDataDefaultPocketChat
   }
 } as const
 // 这个手动写出来的原因是，zod枚举需要字面量类型数组
-export const platformKeyEnum = ['X', 'Telegram', 'Discord', 'Bluesky'] as const
+export const platformKeyEnum = [
+  //
+  'X',
+  'Telegram',
+  'Discord',
+  'Bluesky',
+  'PocketChat'
+] as const
 
 // 类型检查以确保 platformKeyEnum 与 platformKeyMap 的值是同步的
 export type PlatformKeyMapValues =
