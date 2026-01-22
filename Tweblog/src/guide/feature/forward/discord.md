@@ -42,7 +42,7 @@ ABcdEfGhIJklMNopQRStUvWx.yz1234.ABcdEfGhIJklMNopQRStUvWxYZ1
 
 如果想在自己不是群主的服务器添加机器人，建议和群主说明情况，将链接发给群主来完成机器人添加
 ::: tip 欢迎加入自己的 Discord 群组
-Twebolg https://discord.gg/6pMkmMBnGH
+Twebolg https://discord.gg/tYXj9ShnVr
 
 小祥の小窝 https://discord.gg/93JRQbNbb2
 :::

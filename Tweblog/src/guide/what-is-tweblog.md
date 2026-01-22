@@ -58,7 +58,7 @@
 
 ## ☎️ 交流讨论 | 问题反馈
 
-加入 [Discord群组](https://discord.gg/6pMkmMBnGH) [Telegram群组](https://t.me/tweblog)
+加入 [Discord群组](https://discord.gg/tYXj9ShnVr) [Telegram群组](https://t.me/tweblog)
 
 
 ## 📸 截图
