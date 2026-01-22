@@ -32,7 +32,9 @@
 
 **DockerHub：** https://hub.docker.com/r/harukiowo/tweblog
 
-**网站/文档：** https://tweblog.sakiko.top/
+**网站/文档：**
+- https://tweblog.sakiko.top/
+- https://tweblog.pages.dev/
 
 **预览：** https://haruki.sakiko.top/
 
