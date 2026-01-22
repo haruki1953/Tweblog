@@ -2,6 +2,7 @@
 @use './transition.scss';
 @use './animation.scss';
 @use './control.scss';
+@use './custom-font-icons.scss';
 
 @function color-lighten($color, $step) {
   @return mix(white, $color, $step * 10%);

@@ -2,6 +2,7 @@ export const faBrandsNameToClass = (name: string) => `fa-brands fa-${name}`
 
 // https://fontawesome.com/search?o=r&f=brands
 export const faBrandsNameList = [
+  'tweblog-custom-font-icons-pocket-chat',
   'facebook',
   'twitter',
   'instagram',
