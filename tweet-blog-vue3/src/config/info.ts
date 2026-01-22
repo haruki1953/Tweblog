@@ -7,11 +7,11 @@ const appPackageJsonInfo = {
 export const appInfo = {
   copyright: {
     text: 'Tweblog',
-    link: 'https://github.com/haruki1953/Tweblog'
+    link: 'https://github.com/Tweblog/tweblog'
   },
   version: {
     text: appPackageJsonInfo.version,
-    link: 'https://github.com/haruki1953/Tweblog'
+    link: 'https://github.com/Tweblog/tweblog'
   },
   officialWebsite: {
     text: 'tweblog.sakiko.top',

@@ -4,10 +4,10 @@ Tweblog 现在拥有 **桌面版** 和 **Web版**
 
 ## 桌面版
 
-**Github：** https://github.com/haruki1953/Tweblog
+**Github：** https://github.com/Tweblog/tweblog
 
 Tweblog 所有的版本更新都在 Github 以 release 形式发布，可在此处获取最新的压缩包，解压即用
-- https://github.com/haruki1953/Tweblog/releases
+- https://github.com/Tweblog/tweblog/releases
 
 理论上是支持 Windows、Linux、Mac 的，但是自己现在只成功打包了 Windows 版，其他的让我再琢磨琢磨
 
@@ -74,7 +74,7 @@ docker logs Tweblog
   默认密码: adminadmin
 
   https://tweblog.sakiko.top/
-  https://github.com/haruki1953/Tweblog
+  https://github.com/Tweblog/tweblog
   
   ========================================
 ```

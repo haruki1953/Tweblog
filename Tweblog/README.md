@@ -17,7 +17,7 @@
 
 这个仓库是 Tweblog 的官网/文档，同时作为整个项目的主仓库（如果愿意的话 star 这个仓库就好）
 - 网站 https://tweblog.sakiko.top
-- 文档 https://github.com/haruki1953/Tweblog
+- 文档 https://github.com/Tweblog/tweblog
 - 后端 https://github.com/haruki1953/tweet-blog-hono
 - 前端1（管理） https://github.com/haruki1953/tweet-blog-vue3
 - 前端2（公开） https://github.com/haruki1953/tweet-blog-public-vue3
@@ -28,7 +28,7 @@
 
 是一个社交媒体博客化工具，目的是为了方便同时运营多个社交媒体，自己也在打算用这个从推特出逃。
 
-**Github：** https://github.com/haruki1953/Tweblog
+**Github：** https://github.com/Tweblog/tweblog
 
 **DockerHub：** https://hub.docker.com/r/harukiowo/tweblog
 

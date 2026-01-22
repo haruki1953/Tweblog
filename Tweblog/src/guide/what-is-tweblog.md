@@ -6,7 +6,7 @@
 是 tweet + weblog 拼凑来的项目名
 :::
 
-**Github：** https://github.com/haruki1953/Tweblog
+**Github：** https://github.com/Tweblog/tweblog
 
 **DockerHub：** https://hub.docker.com/r/harukiowo/tweblog
 

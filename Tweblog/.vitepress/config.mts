@@ -107,7 +107,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/haruki1953/Tweblog' },
+      { icon: 'github', link: 'https://github.com/Tweblog/tweblog' },
       { icon: 'telegram', link: 'https://t.me/tweblog' },
       { icon: 'discord', link: 'https://discord.gg/6pMkmMBnGH' },
       { icon: 'bluesky', link: 'https://bsky.app/profile/harukiowo.bsky.social' },
