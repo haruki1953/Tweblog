@@ -2,9 +2,24 @@
 // const apiBaseUrl = 'http://localhost:51125/api/'
 // const staticBaseUrl = 'http://localhost:51125/'
 
-// 部署时，将由后端来托管前端，设置为根路径
-const apiBaseUrl = '/api/'
-const staticBaseUrl = '/'
+// // 部署时，将由后端来托管前端，设置为根路径
+// const apiBaseUrl = '/api/'
+// const staticBaseUrl = '/'
+
+let apiBaseUrl: string
+let staticBaseUrl: string
+// 开发环境
+if (import.meta.env.DEV) {
+  // console.log('当前是开发环境')
+  apiBaseUrl = 'http://localhost:51125/api/'
+  staticBaseUrl = 'http://localhost:51125/'
+}
+// 生产环境，将由后端来托管前端，设置为根路径
+else {
+  // console.log('当前是生产环境')
+  apiBaseUrl = '/api/'
+  staticBaseUrl = '/'
+}
 
 export const axiosConfig = {
   baseUrl: apiBaseUrl,

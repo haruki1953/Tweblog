@@ -1,0 +1,9 @@
+{
+  "spellcheck": false,
+  "smartIndentList": false,
+  "tabSize": 2,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "./assets",
+  "useTab": false
+}

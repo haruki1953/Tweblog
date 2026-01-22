@@ -20,7 +20,8 @@ onUnmounted(() => {
 
 <template>
   <div class="home-widgetbot">
-    <widgetbot server="1334824296647753832" channel="1334824297545338973" width="1152" height="600"></widgetbot>
+    <!-- <widgetbot server="1334824296647753832" channel="1334824297545338973" width="1152" height="600"></widgetbot> -->
+    <widgetbot server="1192346949635026944" channel="1323816431804092597" width="1152" height="600"></widgetbot>
   </div>
 </template>
 

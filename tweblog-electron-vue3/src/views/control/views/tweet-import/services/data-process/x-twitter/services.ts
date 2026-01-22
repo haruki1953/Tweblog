@@ -31,7 +31,9 @@ export const dataProcessXtwitterService = (
 
   // instructions 是一个数组，entries 在其中的某一项中，需要找一下
   const instructions_list =
-    xtwitterResResult.data.data.user.result.timeline_v2.timeline.instructions
+    // xtwitterResResult.data.data.user.result.timeline_v2.timeline.instructions
+    // 250610 发现X接口结构改了
+    xtwitterResResult.data.data.user.result.timeline.timeline.instructions
 
   // 寻找 instructions 包含 entries 的项
   let entries_list

@@ -1,38 +1,44 @@
 <p align="center">
-  <img src="https://tweblog.sakiko.top/favicon.svg" alt="cover" style="width: 30%;">
+  <img src="https://tweblog.sakiko.top/favicon.svg" style="width: 128px; height: 128px;">
 </p>
+
+<h1 align="center">
+  Tweblog
+</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue.js">
-  <img src="https://img.shields.io/badge/Node.js-5FA04E?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
-  <img src="https://img.shields.io/badge/Hono-E36002?style=for-the-badge&logo=hono&logoColor=white" alt="Hono">
-  <img src="https://img.shields.io/badge/Sqlite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="Sqlite">
-  <img src="https://img.shields.io/badge/Drizzle-C5F74F?style=for-the-badge&logo=drizzle&logoColor=black" alt="Drizzle">
-  <img src="https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white" alt="Electron">
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
-  <img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="MIT License">
+  <!-- Vue.js -->
+  <a href="https://vuejs.org/" target="_blank"><img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue.js"></a>
+  <!-- Hono -->
+  <a href="https://hono.dev/" target="_blank"><img src="https://img.shields.io/badge/Hono-E36002?style=for-the-badge&logo=hono&logoColor=white" alt="Hono"></a>
+  <!-- Drizzle -->
+  <a href="https://orm.drizzle.team/" target="_blank"><img src="https://img.shields.io/badge/Drizzle-C5F74F?style=for-the-badge&logo=drizzle&logoColor=black" alt="Drizzle ORM"></a>
+  <!-- Electron -->
+  <a href="https://www.electronjs.org/" target="_blank"><img src="https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white" alt="Electron"></a>
+  <!-- License -->
+  <!-- <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="MIT License"></a> -->
+  <!-- GitHub Release -->
+  <!-- <a href="https://github.com/Tweblog/tweblog/releases" target="_blank"><img src="https://img.shields.io/github/release/Tweblog/tweblog.svg?style=for-the-badge" alt="GitHub Release"></a> -->
+  <!-- GitHub Activity -->
+  <!-- <a href="https://github.com/Tweblog/tweblog/commits" target="_blank"><img src="https://img.shields.io/github/commit-activity/m/Tweblog/tweblog.svg?style=for-the-badge" alt="GitHub Activity"></a> -->
+  </br>
+  <!-- Discord -->
+  <a href="https://discord.gg/tYXj9ShnVr"><img alt="Discord" src="https://img.shields.io/discord/1192346949635026944?logo=discord&logoColor=white&label=Discord&color=5865F2&style=for-the-badge"></a>
+  <!-- Telegram -->
+  <a href="https://t.me/tweblog"><img alt="Telegram" src="https://img.shields.io/badge/Telegram-JOIN-188FCA.svg?logo=telegram&logoColor=white&style=for-the-badge"></a>
 </p>
 
 
-这个仓库是 Tweblog 的官网/文档，同时作为整个项目的主仓库（如果愿意的话 star 这个仓库就好）
-- 网站 https://tweblog.sakiko.top
-- 文档 https://github.com/haruki1953/Tweblog
-- 后端 https://github.com/haruki1953/tweet-blog-hono
-- 前端1（管理） https://github.com/haruki1953/tweet-blog-vue3
-- 前端2（公开） https://github.com/haruki1953/tweet-blog-public-vue3
-- 桌面版后端 https://github.com/haruki1953/tweblog-electron-hono
-- 桌面版前端 https://github.com/haruki1953/tweblog-electron-vue3
+Tweblog 是一个社交媒体博客化工具，目的是为了方便同时运营多个社交媒体，自己也在打算用这个从推特出逃。
 
-# Tweblog
+**Github：** https://github.com/Tweblog/tweblog
 
-是一个社交媒体博客化工具，目的是为了方便同时运营多个社交媒体，自己也在打算用这个从推特出逃。
+<!-- **DockerHub：** https://hub.docker.com/r/harukiowo/tweblog -->
+**GHCR：** https://github.com/Tweblog/tweblog/pkgs/container/tweblog
 
-**Github：** https://github.com/haruki1953/Tweblog
-
-**DockerHub：** https://hub.docker.com/r/harukiowo/tweblog
-
-**网站/文档：** https://tweblog.sakiko.top/
+**网站/文档：**
+- https://tweblog.sakiko.top/
+- https://tweblog.pages.dev/
 
 **预览：** https://haruki.sakiko.top/
 
@@ -78,7 +84,7 @@
 
 ## ☎️ 交流讨论 | 问题反馈
 
-加入 [Discord群组](https://discord.gg/6pMkmMBnGH) [Telegram群组](https://t.me/tweblog)
+加入 [Discord群组](https://discord.gg/tYXj9ShnVr) [Telegram群组](https://t.me/tweblog)
 
 
 ## 📸 截图
@@ -94,17 +100,3 @@
 ![alt text](./Tweblog/src/guide/assets/image-5.jpg)
 
 ![alt text](./Tweblog/src/guide/assets/image-6.jpg)
-
-## VitePress 📝💨
-本仓库是 Tweblog 的官网/文档，使用 [VitePress](https://vitepress.dev/zh/) 制作
-```sh
-# Project Setup
-pnpm install
-
-# Compile and Hot-Reload for Development
-pnpm docs:dev
-
-# Type-Check, Compile and Minify for Production
-pnpm docs:build
-```
-

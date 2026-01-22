@@ -3,7 +3,7 @@ import { webName } from '@/config'
 import { nextTick, ref } from 'vue'
 // 下边这些可能是因为vue的vscode插件导致报错，先不管了
 import LayoutContainer from '@/views/layout/LayoutContainer.vue'
-import TestPage from '@/views/test/TestPage.vue'
+// import TestPage from '@/views/test/TestPage.vue'
 import HomePage from '@/views/home/HomePage.vue'
 import LoginPage from '@/views/login/LoginPage.vue'
 import SendPage from '@/views/post/SendPage.vue'
@@ -40,12 +40,12 @@ const router = createRouter({
           component: HomePage,
           meta: { title: `` }
         },
-        {
-          name: 'test',
-          path: '/test',
-          component: TestPage,
-          meta: { title: `` }
-        },
+        // {
+        //   name: 'test',
+        //   path: '/test',
+        //   component: TestPage,
+        //   meta: { title: `` }
+        // },
         {
           name: 'post',
           path: '/post/:id',

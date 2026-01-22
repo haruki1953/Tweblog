@@ -4,10 +4,6 @@ FROM node:20.12.2-alpine3.19 AS base
 FROM base AS builder
 WORKDIR /app
 
-# 设置代理
-ENV http_proxy=http://192.168.2.110:10811/
-ENV https_proxy=http://192.168.2.110:10811/
-
 # 复制安装依赖文件
 COPY package.json pnpm-lock.yaml ./
 
@@ -27,10 +23,6 @@ RUN pnpm build && \
     pnpm prune --prod && \
     pnpm store prune && \
     npm cache clean --force
-
-# 取消代理
-ENV http_proxy=
-ENV https_proxy=
 
 # 运行阶段
 FROM base AS runner

@@ -4,7 +4,13 @@ export const xtwitterResSchema = z.object({
   data: z.object({
     user: z.object({
       result: z.object({
-        timeline_v2: z.object({
+        // timeline_v2: z.object({
+        //   timeline: z.object({
+        //     instructions: z.array(z.any())
+        //   })
+        // })
+        // 250610 发现X接口结构改了
+        timeline: z.object({
           timeline: z.object({
             instructions: z.array(z.any())
           })

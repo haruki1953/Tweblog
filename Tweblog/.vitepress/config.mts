@@ -1,8 +1,20 @@
 import { defineConfig } from 'vitepress'
 
-// 是否为本地文档：本地文档构建时应启用
-export const isLocalDocs = false
-// export const isLocalDocs = true
+// // 是否为本地文档：本地文档构建时应启用
+// export const isLocalDocs = false
+// // export const isLocalDocs = true
+
+// 从环境变量读取是否本地文档 
+const isLocalDocs = process.env.LOCAL_DOCS === 'true'
+
+console.log('process.env.LOCAL_DOCS', process.env.LOCAL_DOCS)
+console.log('isLocalDocs', isLocalDocs)
+
+/* 
+#Bash
+export LOCAL_DOCS=true
+unset LOCAL_DOCS
+*/
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -95,10 +107,10 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/haruki1953/Tweblog' },
+      { icon: 'github', link: 'https://github.com/Tweblog/tweblog' },
       { icon: 'telegram', link: 'https://t.me/tweblog' },
-      { icon: 'discord', link: 'https://discord.gg/6pMkmMBnGH' },
-      { icon: 'bluesky', link: 'https://bsky.app/profile/harukiowo.bsky.social' },
+      { icon: 'discord', link: 'https://discord.gg/tYXj9ShnVr' },
+      { icon: 'bluesky', link: 'https://bsky.app/profile/haruki.sakiko.top' },
       { icon: 'x', link: 'https://x.com/harukiO_0' },
     ],
 
