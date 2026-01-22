@@ -1,0 +1,23 @@
+{
+  // TypeScript 编译器选项配置
+  "compilerOptions": {
+    // ✅ 启用对 JavaScript 文件的类型检查（用于配合 JSDoc 实现类型安全）
+    "checkJs": true,
+    // ✅ 启用所有严格类型检查选项（相当于一次性打开以下项）
+    "strict": true,
+    // ✅ 禁止隐式 any 类型，必须明确指定变量/参数类型
+    "noImplicitAny": true,
+    // ✅ 强制进行 null 和 undefined 的检查，防止空值错误
+    "strictNullChecks": true,
+    // ✅ 函数参数类型必须严格匹配（避免潜在的兼容性问题）
+    "strictFunctionTypes": true,
+    // ✅ 检查未使用的局部变量，保持代码整洁
+    "noUnusedLocals": true,
+    // ✅ 检查未使用的函数参数，提醒你清理无用代码
+    "noUnusedParameters": true
+  },
+  // ✅ 指定要包含在编译过程中的文件或目录
+  "include": [
+    "**/*.js"
+  ]
+}
