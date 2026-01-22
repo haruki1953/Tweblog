@@ -16,8 +16,8 @@
 ## [1.3.0] - 2025-02-22
 
 ### ✨ 新增
-- 新增 [Bluesky](./feature/import/bluesky) 导入功能
-- 新增 [Bluesky](./feature/forward/bluesky) 转发功能
+- 新增 [Bluesky](./Tweblog/src/guide/feature/import/bluesky) 导入功能
+- 新增 [Bluesky](./Tweblog/src/guide/feature/forward/bluesky) 转发功能
 
 ### 🧱 改进
 - 桌面版新增本地文档
@@ -25,8 +25,8 @@
 ## [1.2.0] - 2025-02-16
 
 ### ✨ 新增
-- 新增 [Discord](./feature/import/discord) 导入功能
-- 新增 [Discord](./feature/forward/discord) 转发功能
+- 新增 [Discord](./Tweblog/src/guide/feature/import/discord) 导入功能
+- 新增 [Discord](./Tweblog/src/guide/feature/forward/discord) 转发功能
 
 ### 🧱 改进
 - 推文转发时，图片 alt 超过平台限制将自动截断，避免转发失败
@@ -35,13 +35,13 @@
 ## [1.1.0] - 2025-02-10
 
 ### ✨ 新增
-- 新增 [Telegram](./feature/import/telegram) 导入功能
-- 新增 [Telegram](./feature/forward/telegram) 转发功能
+- 新增 [Telegram](./Tweblog/src/guide/feature/import/telegram) 导入功能
+- 新增 [Telegram](./Tweblog/src/guide/feature/forward/telegram) 转发功能
 
 ### 🧱 改进
 - 推文发送时，图片选择数量从 4 张提升至 **40 张**
 - 推文发送页输入框新增各平台字数限制提示
-- 超过平台字数或图片数量限制的推文，将以 [串联回复](./feature/tweet-forward#串联回复) 的方式完整发送
+- 超过平台字数或图片数量限制的推文，将以 [串联回复](./Tweblog/src/guide/feature/tweet-forward#串联回复) 的方式完整发送
 
 ### 🛠 修复
 - 修复推文存在回复时无法永久删除的问题
@@ -53,7 +53,7 @@
 在改进 Web 版的同时，推出了 Electron 桌面版。
 
 ### ✨ 新增
-- 新增 [桌面版](./desktop)，具备 Web 版全部功能，并可通过 Web 端口远程控制
+- 新增 [桌面版](./Tweblog/src/guide/desktop)，具备 Web 版全部功能，并可通过 Web 端口远程控制
 
 ### 🧱 改进
 - 得益于 Drizzle，Docker 镜像从 280MB 缩小至 **199MB**
@@ -75,19 +75,19 @@
 
 ### ⚠ 注意
 - **1.0 与 0.0 版本数据库不兼容**
-	- 旧数据库：`data/sqlite.db`
-	- 新数据库：`data/database-1_0_0.sqlite`
-	- 暂无迁移方案，请重新从 Twitter 等平台导入
-	- 1.0 之后的版本将保持数据库兼容性
+  - 旧数据库：`data/sqlite.db`
+  - 新数据库：`data/database-1_0_0.sqlite`
+  - 暂无迁移方案，请重新从 Twitter 等平台导入
+  - 1.0 之后的版本将保持数据库兼容性
 
 ## [0.0.2] - 2025-01-14
 
 ### ✨ 新增
-- 新增 [批量导入](./feature/tweet-import.md#批量导入)
-- 新增 [高级功能](./feature/tweet-import.md#高级功能)：导入时可关联至转发记录
-- 导入、转发任务支持 [任务中止](./feature/tweet-import.md#任务中止)
-- 新增 [自动转发](./feature/tweet-forward.md#自动转发)
-- 新增 [转发记录设置](./feature/tweet-forward.md#转发记录设置)
+- 新增 [批量导入](./Tweblog/src/guide/feature/tweet-import.md#批量导入)
+- 新增 [高级功能](./Tweblog/src/guide/feature/tweet-import.md#高级功能)：导入时可关联至转发记录
+- 导入、转发任务支持 [任务中止](./Tweblog/src/guide/feature/tweet-import.md#任务中止)
+- 新增 [自动转发](./Tweblog/src/guide/feature/tweet-forward.md#自动转发)
+- 新增 [转发记录设置](./Tweblog/src/guide/feature/tweet-forward.md#转发记录设置)
 
 ### 🧱 改进
 - 修复图片预览白边问题并优化动画
