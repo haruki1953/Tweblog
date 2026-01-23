@@ -52,7 +52,7 @@ docker run -d \
 	-v ${HOME}/Tweblog/data:/app/data \
 	-p 51125:51125 \
 	--restart unless-stopped \
-	ghcr.io/Tweblog/tweblog:latest
+	ghcr.io/tweblog/tweblog:latest
 ```
 
 ::: tip 更多部署说明

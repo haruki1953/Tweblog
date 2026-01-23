@@ -21,7 +21,7 @@ docker run -d \
 	-v ${HOME}/Tweblog/data:/app/data \
 	-p 51125:51125 \
 	--restart unless-stopped \
-	ghcr.io/Tweblog/tweblog:latest
+	ghcr.io/tweblog/tweblog:latest
 ```
 
 部署完成后，使用命令查看日志
