@@ -5,6 +5,14 @@
 本项目遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/) 的格式，
 并遵循 [语义化版本号](https://semver.org/lang/zh-CN/)。
 
+## [1.5.0] - 2026-01-23
+
+### ✨ 新增
+- 支持对于 [PocketChat](https://github.com/PocketTogether/pocket-chat) 的转发 by @haruki1953 in https://github.com/Tweblog/tweblog/pull/5
+
+### 🔧 变更
+- 调整项目显示的文档地址，调整前端 forward-config 批量转发显示 by @haruki1953 in https://github.com/Tweblog/tweblog/pull/6
+
 ## [1.4.0] - 2026-01-22
 
 ### 🔧 变更

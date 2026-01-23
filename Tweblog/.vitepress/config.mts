@@ -92,7 +92,8 @@ export default defineConfig({
           { text: 'X / Twitter', link: '/guide/feature/forward/x-twitter' },
           { text: 'Telegram', link: '/guide/feature/forward/telegram' },
           { text: 'Discord', link: '/guide/feature/forward/discord' },
-          { text: 'Bluesky', link: '/guide/feature/forward/bluesky' }
+          { text: 'Bluesky', link: '/guide/feature/forward/bluesky' },
+          { text: 'PocketChat', link: '/guide/feature/forward/pocket-chat' },
         ]
       },
       {

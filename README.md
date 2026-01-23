@@ -42,7 +42,7 @@ Tweblog 是一个社交媒体博客化工具，目的是为了方便同时运营
 
 **预览：** https://haruki.sakiko.top/
 
-**当前版本：** [1.4.0](https://tweblog.sakiko.top/guide/changelog#140)
+**当前版本：** [1.5.0](https://tweblog.sakiko.top/guide/changelog#150)
 
 **技术栈：**
 - 前端 TypeScript + Vue3 + ElementPlus
@@ -66,6 +66,8 @@ Tweblog 是一个社交媒体博客化工具，目的是为了方便同时运营
 - 支持对于 Discord 的导入与转发
 
 - 支持对于 Bluesky 的导入与转发
+
+- 支持对于 [PocketChat](https://github.com/PocketTogether/pocket-chat) 的转发
 
 - ......
 
