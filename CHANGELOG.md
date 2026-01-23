@@ -86,7 +86,7 @@
 - 新增 [批量导入](./Tweblog/src/guide/feature/tweet-import.md#批量导入)
 - 新增 [高级功能](./Tweblog/src/guide/feature/tweet-import.md#高级功能)：导入时可关联至转发记录
 - 导入、转发任务支持 [任务中止](./Tweblog/src/guide/feature/tweet-import.md#任务中止)
-- 新增 [自动转发](./Tweblog/src/guide/feature/tweet-forward.md#自动转发)
+- 新增 [批量转发](./Tweblog/src/guide/feature/tweet-forward.md#批量转发)
 - 新增 [转发记录设置](./Tweblog/src/guide/feature/tweet-forward.md#转发记录设置)
 
 ### 🧱 改进
