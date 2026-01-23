@@ -1,4 +1,4 @@
-# 什么是 Tweblog <Badge type="tip" text="1.5.0" />
+# 什么是 Tweblog <Badge type="tip" text="1.5.2" />
 
 是一个社交媒体博客化工具，目的是为了方便同时运营多个社交媒体，自己也在打算用这个从推特出逃。
 
@@ -17,7 +17,7 @@
 
 **预览：** https://haruki.sakiko.top/
 
-**当前版本：** [1.5.0](./changelog.md#150)
+**当前版本：** [1.5.2](./changelog.md#152)
 
 **技术栈：**
 - 前端 TypeScript + Vue3 + ElementPlus

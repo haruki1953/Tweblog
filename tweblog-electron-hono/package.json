@@ -1,6 +1,6 @@
 {
   "name": "tweblog",
-  "version": "1.5.0",
+  "version": "1.5.2",
   "description": "一个社交媒体博客化工具，针对推特等平台的内容进行导入与转发",
   "main": "dist/index.js",
   "author": "haruki",

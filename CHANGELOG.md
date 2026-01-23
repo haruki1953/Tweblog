@@ -5,6 +5,11 @@
 本项目遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/) 的格式，
 并遵循 [语义化版本号](https://semver.org/lang/zh-CN/)。
 
+## [1.5.2] - 2026-01-23
+
+### 🐛 修复
+- 文档中修正 ghcr 路径，组织名应小写如 ghcr.io/tweblog/tweblog:latest by @haruki1953 in https://github.com/Tweblog/tweblog/pull/8
+
 ## [1.5.0] - 2026-01-23
 
 ### ✨ 新增
@@ -113,6 +118,7 @@
 - 支持 X / Twitter 导入与转发
 - Web 版可作为个人博客使用
 
+[1.5.2]: https://github.com/Tweblog/tweblog/compare/v1.5.0...v1.5.2
 [1.5.0]: https://github.com/Tweblog/tweblog/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/Tweblog/tweblog/compare/1.3.0...v1.4.0
 [1.3.0]: https://github.com/Tweblog/tweblog/compare/1.2.0...1.3.0
