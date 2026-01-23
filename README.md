@@ -42,7 +42,7 @@ Tweblog 是一个社交媒体博客化工具，目的是为了方便同时运营
 
 **预览：** https://haruki.sakiko.top/
 
-**当前版本：** [1.5.1](https://tweblog.sakiko.top/guide/changelog#151)
+**当前版本：** [1.5.2](https://tweblog.sakiko.top/guide/changelog#152)
 
 **技术栈：**
 - 前端 TypeScript + Vue3 + ElementPlus
