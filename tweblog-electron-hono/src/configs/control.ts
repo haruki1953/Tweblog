@@ -7,7 +7,7 @@ export const forwardingConfig = {
   interruptCheckInterval: 10000
 } as const
 
-// （自动转发）转发顺序配置
+// （批量转发）转发顺序配置
 export const forwardingOrderMap = {
   'new-to-old': {
     key: 'new-to-old'

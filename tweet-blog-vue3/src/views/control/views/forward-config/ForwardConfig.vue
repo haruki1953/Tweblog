@@ -10,11 +10,11 @@ const forwardStore = useForwardStore()
 // 进入此页面时，默认的子页面
 const defaultPage = (() => {
   // if (forwardStore.forwardSettingList.length > 0) {
-  //   // 有转发配置时，直接显示自动转发页面
+  //   // 有转发配置时，直接显示批量转发页面
   //   return 'ForwardAutoPage'
   // }
   // // else 否则显示转发配置页面
-  // 【260123】打开推文转发页时，不再默认显示 自动转发，应显示转发配置比较好
+  // 【260123】打开推文转发页时，不再默认显示 批量转发，应显示转发配置比较好
   return 'ForwardSettingPage' as const
 })()
 
@@ -24,7 +24,7 @@ const options = [
     value: 'ForwardSettingPage'
   },
   {
-    label: '自动转发',
+    label: '批量转发',
     value: 'ForwardAutoPage'
   },
   {

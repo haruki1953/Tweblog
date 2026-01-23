@@ -49,10 +49,10 @@ export const appInfo = {
     text: '说明',
     link: 'https://tweblog.pages.dev/guide/feature/tweet-forward#转发记录设置'
   },
-  // 自动转发说明
+  // 批量转发说明
   forwardAutoDocs: {
     text: '说明',
-    link: 'https://tweblog.pages.dev/guide/feature/tweet-forward#自动转发'
+    link: 'https://tweblog.pages.dev/guide/feature/tweet-forward#批量转发'
   },
   // Web端口说明
   webPortDocs: {

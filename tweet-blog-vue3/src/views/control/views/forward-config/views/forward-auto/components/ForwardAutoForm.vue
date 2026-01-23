@@ -84,10 +84,10 @@ const refConfirmContainer = ref<InstanceType<typeof ConfirmContainer> | null>(
     <ConfirmContainer
       ref="refConfirmContainer"
       backgroundColor="var(--color-background-soft)"
-      title="确认要开始自动转发吗？"
+      title="确认要开始批量转发吗？"
       size="small"
     >
-      <!-- <div class="control-lable">自动转发未被转发的推文</div> -->
+      <!-- <div class="control-lable">批量转发未被转发的推文</div> -->
       <div class="form-box">
         <div class="form-row">
           <div class="control-radio">

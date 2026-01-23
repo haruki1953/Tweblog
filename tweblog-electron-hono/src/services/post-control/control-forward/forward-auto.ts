@@ -10,7 +10,7 @@ const taskSystem = useTaskSystem()
 const logUtil = useLogUtil()
 const forwardSystem = useForwardSystem()
 
-// 自动转发服务
+// 批量转发服务
 export const postControlForwardAutoService = async (json: PostControlForwardAutoJsonType) => {
   const {
     forwardConfigId,
