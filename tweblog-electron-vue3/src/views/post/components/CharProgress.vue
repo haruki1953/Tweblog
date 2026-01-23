@@ -27,6 +27,14 @@ const props = withDefaults(
 
 // 【250209】根据不同平台进行不同的计数方法
 const platformCountInfo = computed(() => {
+  // PocketChat
+  if (props.platform === platformKeyMap.PocketChat.key) {
+    return {
+      calcCharNumber: (str: string) => str.length,
+      maxPostCharacters: postConfig.maxPostCharactersOnSendPocketChat,
+      remainingCharsToWarning: postConfig.remainingCharsToWarningPocketChat
+    }
+  }
   // Bluesky
   if (props.platform === platformKeyMap.Bluesky.key) {
     return {
