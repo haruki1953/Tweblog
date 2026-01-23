@@ -107,6 +107,8 @@ export const postConfig = {
   maxPostCharactersOnSendDiscord: 2000,
   // Bluesky 的
   maxPostCharactersOnSendBluesky: 300,
+  // PocketChat 的
+  maxPostCharactersOnSendPocketChat: 2000,
   // 开始警告的剩余字数
   // X 的
   remainingCharsToWarning: 20,
@@ -116,6 +118,8 @@ export const postConfig = {
   remainingCharsToWarningDiscord: 20,
   // Bluesky 的
   remainingCharsToWarningBluesky: 20,
+  // PocketChat 的
+  remainingCharsToWarningPocketChat: 20,
   // 持久化保存的帖子数据的最大数量
   postPoolSizeLimit: 100,
   // 超过限制时移除的数量
