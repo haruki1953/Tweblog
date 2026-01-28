@@ -19,7 +19,7 @@ import type {
   ReturnForForwardPost
 } from './dependencies'
 import { AppError } from '@/classes'
-import { useLogUtil, urlJoinUtil } from '@/utils'
+import { useLogUtil, urlJoinUtil, imageListToMaxNumGroupList } from '@/utils'
 import { type PromiseReturnType } from '@/types'
 
 const logUtil = useLogUtil()
@@ -44,13 +44,17 @@ interface UploadedImageInfo {
  * 将数组按最大数量分组
  */
 const groupListByMaxNum = <T>(list: T[], maxNum: number): T[][] => {
-  const result: T[][] = []
-  let index = 0
-  while (index < list.length) {
-    result.push(list.slice(index, index + maxNum))
-    index += maxNum
-  }
-  return result
+  // const result: T[][] = []
+  // let index = 0
+  // while (index < list.length) {
+  //   result.push(list.slice(index, index + maxNum))
+  //   index += maxNum
+  // }
+  // return result
+  return imageListToMaxNumGroupList({
+    imageList: list,
+    maxNum
+  })
 }
 
 /**
@@ -146,7 +150,13 @@ export const forwardPostPocketChatService = async (
   if (textChunks.length > 0) {
     for (let i = 0; i < textChunks.length; i++) {
       const chunk = textChunks[i]
-      const replyMessage = i === 0 ? undefined : textSendResults[i - 1].id
+      // const replyMessage = i === 0 ? undefined : textSendResults[i - 1].id
+      const replyMessage = (() => {
+        if (i === 0) {
+          return targetPostData.parentPostSamePlatformPostId
+        }
+        return textSendResults[i - 1].id
+      })()
 
       const res = await pocketChatSendTextMessageService({
         host,
@@ -177,7 +187,7 @@ export const forwardPostPocketChatService = async (
       authorId,
       imageIds,
       // 如果有文字消息，则所有图片消息都 reply 到 rootMessageId
-      replyMessage: rootMessageId
+      replyMessage: rootMessageId ?? targetPostData.parentPostSamePlatformPostId
     })
 
     imageSendResults.push(res)
